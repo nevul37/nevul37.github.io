@@ -1,0 +1,705 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jongseong Kim</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --bg-color: #0a0a0a;
+            --text-color: #e8e8e8;
+            --text-muted: #888888;
+            --accent-color: #4a9eff;
+            --border-color: #2a2a2a;
+            --hover-bg: #1a1a1a;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Helvetica Neue', Arial, sans-serif;
+            background: var(--bg-color);
+            color: var(--text-color);
+            line-height: 1.7;
+            font-size: 16px;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 60px 30px;
+        }
+
+        /* Header Section */
+        .header {
+            display: flex;
+            align-items: center;
+            gap: 30px;
+            margin-bottom: 50px;
+            padding-bottom: 30px;
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        .profile-image {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 3px solid var(--border-color);
+            flex-shrink: 0;
+        }
+
+        .profile-placeholder {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            background: var(--hover-bg);
+            border: 3px solid var(--border-color);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 48px;
+            color: var(--text-muted);
+            flex-shrink: 0;
+        }
+
+        .header-content h1 {
+            font-size: 2.2em;
+            font-weight: 700;
+            margin-bottom: 8px;
+            color: var(--text-color);
+        }
+
+        .header-content p {
+            color: var(--text-muted);
+            font-size: 1.05em;
+            margin-bottom: 15px;
+        }
+
+        .contact-links {
+            display: flex;
+            gap: 15px;
+            flex-wrap: wrap;
+        }
+
+        .contact-links a {
+            color: var(--text-muted);
+            text-decoration: none;
+            font-size: 0.95em;
+            transition: color 0.3s;
+        }
+
+        .contact-links a:hover {
+            color: var(--accent-color);
+        }
+
+        .contact-links a i {
+            margin-right: 4px;
+        }
+
+        /* Bio Section */
+        .bio {
+            margin-bottom: 50px;
+            line-height: 1.8;
+            font-size: 1.05em;
+        }
+
+        .bio p {
+            margin-bottom: 15px;
+            color: var(--text-color);
+        }
+
+        .bio a {
+            color: var(--accent-color);
+            text-decoration: none;
+            border-bottom: 1px solid transparent;
+            transition: border-color 0.3s;
+        }
+
+        .bio a:hover {
+            border-bottom-color: var(--accent-color);
+        }
+
+        /* Stats */
+        .stats {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 20px;
+            margin-bottom: 50px;
+            padding: 25px;
+            background: var(--hover-bg);
+            border-radius: 8px;
+            border: 1px solid var(--border-color);
+        }
+
+        .stat-item {
+            text-align: center;
+        }
+
+        .stat-number {
+            font-size: 2em;
+            font-weight: 700;
+            color: var(--accent-color);
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        .stat-label {
+            font-size: 0.9em;
+            color: var(--text-muted);
+        }
+
+        /* Section */
+        section {
+            margin-bottom: 50px;
+        }
+
+        .section-title {
+            font-size: 1.5em;
+            font-weight: 600;
+            margin-bottom: 20px;
+            color: var(--text-color);
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .section-title i {
+            font-size: 0.9em;
+            color: var(--accent-color);
+        }
+
+        /* Timeline Items */
+        .timeline-item {
+            margin-bottom: 30px;
+            padding-bottom: 30px;
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        .timeline-item:last-child {
+            border-bottom: none;
+        }
+
+        .timeline-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+            margin-bottom: 8px;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+
+        .timeline-title {
+            font-size: 1.15em;
+            font-weight: 600;
+            color: var(--text-color);
+        }
+
+        .timeline-date {
+            color: var(--text-muted);
+            font-size: 0.9em;
+        }
+
+        .timeline-subtitle {
+            color: var(--text-muted);
+            margin-bottom: 12px;
+            font-size: 0.95em;
+        }
+
+        .timeline-subtitle a {
+            color: var(--accent-color);
+            text-decoration: none;
+        }
+
+        .timeline-subtitle a:hover {
+            text-decoration: underline;
+        }
+
+        .timeline-description {
+            color: var(--text-color);
+            line-height: 1.7;
+        }
+
+        .timeline-description ul {
+            list-style: none;
+            padding-left: 0;
+            margin-top: 10px;
+        }
+
+        .timeline-description li {
+            padding-left: 20px;
+            position: relative;
+            margin-bottom: 8px;
+        }
+
+        .timeline-description li:before {
+            content: "•";
+            position: absolute;
+            left: 0;
+            color: var(--accent-color);
+            font-weight: bold;
+        }
+
+        /* Tags */
+        .tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+            margin-top: 12px;
+        }
+
+        .tag {
+            padding: 4px 12px;
+            background: var(--hover-bg);
+            border: 1px solid var(--border-color);
+            border-radius: 4px;
+            font-size: 0.85em;
+            color: var(--text-muted);
+        }
+
+        /* Highlight Box */
+        .highlight-box {
+            background: var(--hover-bg);
+            border: 1px solid var(--border-color);
+            border-left: 3px solid var(--accent-color);
+            padding: 20px;
+            border-radius: 4px;
+            margin-bottom: 30px;
+        }
+
+        .highlight-box h3 {
+            font-size: 1.2em;
+            margin-bottom: 12px;
+            color: var(--text-color);
+        }
+
+        .highlight-box ul {
+            list-style: none;
+            padding-left: 0;
+        }
+
+        .highlight-box li {
+            padding-left: 20px;
+            position: relative;
+            margin-bottom: 8px;
+            color: var(--text-color);
+        }
+
+        .highlight-box li:before {
+            content: "✓";
+            position: absolute;
+            left: 0;
+            color: var(--accent-color);
+            font-weight: bold;
+        }
+
+        /* News Section */
+        .news-item {
+            display: flex;
+            gap: 20px;
+            margin-bottom: 20px;
+            padding-bottom: 20px;
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        .news-item:last-child {
+            border-bottom: none;
+        }
+
+        .news-date {
+            color: var(--text-muted);
+            font-size: 0.9em;
+            min-width: 120px;
+            flex-shrink: 0;
+        }
+
+        .news-content {
+            color: var(--text-color);
+            line-height: 1.7;
+        }
+
+        .news-content a {
+            color: var(--accent-color);
+            text-decoration: none;
+            border-bottom: 1px solid transparent;
+            transition: border-color 0.3s;
+        }
+
+        .news-content a:hover {
+            border-bottom-color: var(--accent-color);
+        }
+
+        /* Scrollable Highlights Container */
+        .highlights-container {
+            max-height: 400px;
+            overflow-y: auto;
+            padding-right: 10px;
+        }
+
+        .highlights-container::-webkit-scrollbar {
+            width: 6px;
+        }
+
+        .highlights-container::-webkit-scrollbar-track {
+            background: var(--bg-color);
+            border-radius: 3px;
+        }
+
+        .highlights-container::-webkit-scrollbar-thumb {
+            background: var(--border-color);
+            border-radius: 3px;
+        }
+
+        .highlights-container::-webkit-scrollbar-thumb:hover {
+            background: var(--text-muted);
+        }
+
+        /* CVE List */
+        .cve-list {
+            display: grid;
+            gap: 15px;
+        }
+
+        .cve-item {
+            padding: 15px;
+            background: var(--hover-bg);
+            border: 1px solid var(--border-color);
+            border-radius: 4px;
+            transition: border-color 0.3s;
+        }
+
+        .cve-item:hover {
+            border-color: var(--accent-color);
+        }
+
+        .cve-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+            margin-bottom: 5px;
+        }
+
+        .cve-id {
+            font-weight: 600;
+            color: var(--accent-color);
+            font-size: 0.95em;
+        }
+
+        .cve-date {
+            font-size: 0.85em;
+            color: var(--text-muted);
+        }
+
+        .cve-description {
+            color: var(--text-muted);
+            font-size: 0.9em;
+        }
+
+        /* Skills */
+        .skills-grid {
+            display: grid;
+            gap: 20px;
+        }
+
+        .skill-category {
+            padding: 20px;
+            background: var(--hover-bg);
+            border: 1px solid var(--border-color);
+            border-radius: 4px;
+        }
+
+        .skill-category h4 {
+            font-size: 1em;
+            margin-bottom: 12px;
+            color: var(--text-color);
+        }
+
+        .skill-list {
+            color: var(--text-muted);
+            font-size: 0.95em;
+            line-height: 1.8;
+        }
+
+        /* Footer */
+        footer {
+            margin-top: 60px;
+            padding-top: 30px;
+            border-top: 1px solid var(--border-color);
+            text-align: center;
+            color: var(--text-muted);
+            font-size: 0.9em;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .container {
+                padding: 40px 20px;
+            }
+
+            .header {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+
+            .header-content h1 {
+                font-size: 1.8em;
+            }
+
+            .stats {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Header -->
+        <header class="header">
+            <!-- Replace with your image: <img src="your-photo.jpg" alt="Jongseong Kim" class="profile-image"> -->
+            <div class="profile-placeholder">
+                <i class="fas fa-user"></i>
+            </div>
+            <div class="header-content">
+                <h1>Jongseong Kim</h1>
+                <p>Security Researcher</p>
+                <div class="contact-links">
+                    <a href="mailto:nevul37@gmail.com"><i class="fas fa-envelope"></i>Email</a>
+                    <a href="https://www.linkedin.com/in/jongseongkim" target="_blank"><i class="fab fa-linkedin"></i>LinkedIn</a>
+                    <a href="https://github.com/yourusername" target="_blank"><i class="fab fa-github"></i>GitHub</a>
+                </div>
+            </div>
+        </header>
+
+        <!-- Bio -->
+        <div class="bio">
+            <p>
+                I'm a Computer Science undergraduate at <a href="https://www.ajou.ac.kr/en/" target="_blank">Ajou University</a> (GPA: 4.02/4.5, Top 4.8%), graduating in August 2025. I specialize in <strong>Windows offensive security</strong> and <strong>vulnerability research</strong>, focusing on discovering security vulnerabilities in Windows COM objects, kernel drivers, and system internals using advanced techniques including LLM-powered binary analysis and fuzzing.
+            </p>
+            <p>
+                I have been recognized as a <strong>Microsoft Security Response Center (MSRC) Most Valuable Researcher</strong>, ranking in the Global Top 100 across seven consecutive quarters. My research has resulted in <strong>52+ CVE disclosures</strong> and over <strong>$115,000 in bug bounties</strong>. Recently, my team <strong>SuperDiceCode</strong> achieved <strong>3rd place at DEF CON 33 CTF</strong>, one of the most prestigious global CTF competitions.
+            </p>
+        </div>
+
+        <!-- Highlights Section -->
+        <section>
+            <h2 class="section-title"><i class="fas fa-star"></i>highlights</h2>
+            
+            <div class="highlights-container">
+                <div class="news-item">
+                    <div class="news-date">Oct 30, 2025</div>
+                    <div class="news-content">
+                        Ranked in <a href="https://msrc.microsoft.com/leaderboard" target="_blank">MSRC</a>'s 2025 Most Valuable Security Researcher Leaderboard along with 10+ CVEs!
+                    </div>
+                </div>
+
+                <div class="news-item">
+                    <div class="news-date">Aug 2025</div>
+                    <div class="news-content">
+                        🏆 Achieved <strong>3rd place</strong> at <a href="https://defcon.org/html/defcon-33/dc-33-ctf.html" target="_blank">DEF CON 33 CTF</a> with team SuperDiceCode!
+                    </div>
+                </div>
+
+                <div class="news-item">
+                    <div class="news-date">Nov 2024</div>
+                    <div class="news-content">
+                        Spoke at <a href="https://codeblue.jp/en/program/time-table/day2-010/" target="_blank">CODE BLUE 2024</a> in Tokyo about systematically fuzzing Windows kernel drivers with symbolic execution.
+                    </div>
+                </div>
+
+                <div class="news-item">
+                    <div class="news-date">2023-2025</div>
+                    <div class="news-content">
+                        Recognized in MSRC Global Top 100 Security Researchers for <strong>7 consecutive quarters</strong> (2023 Q4, 2024 Q2-Q4, 2025 Q1-Q3, 2025 Overall).
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Experience -->
+        <section>
+            <h2 class="section-title"><i class="fas fa-briefcase"></i>Experience</h2>
+            
+            <div class="timeline-item">
+                <div class="timeline-header">
+                    <div class="timeline-title">Offensive Security Researcher</div>
+                    <div class="timeline-date">Sep 2024 – Present</div>
+                </div>
+                <div class="timeline-subtitle">ENKI WhiteHat, Seoul</div>
+                <div class="timeline-description">
+                    Focused on Windows offensive security research, analyzing kernel drivers, COM components, and system internals.
+                </div>
+            </div>
+
+            <div class="timeline-item">
+                <div class="timeline-header">
+                    <div class="timeline-title">Offensive Security Researcher</div>
+                    <div class="timeline-date">Mar 2024 – Jul 2024</div>
+                </div>
+                <div class="timeline-subtitle">CW Research, Seoul</div>
+                <div class="timeline-description">
+                    Researched Windows kernel security, focusing on fuzzing and vulnerability discovery in kernel drivers.
+                </div>
+            </div>
+
+            <div class="timeline-item">
+                <div class="timeline-header">
+                    <div class="timeline-title">Signal Intelligence/Electronic Warfare Operations</div>
+                    <div class="timeline-date">Dec 2021 – Jun 2023</div>
+                </div>
+                <div class="timeline-subtitle">Republic of Korea Army</div>
+                <div class="timeline-description">
+                    Served as a signal intelligence specialist in research division.
+                </div>
+            </div>
+
+            <div class="timeline-item">
+                <div class="timeline-header">
+                    <div class="timeline-title">Best of The Best 12th (Best 10)</div>
+                    <div class="timeline-date">Jul 2023 – Mar 2024</div>
+                </div>
+                <div class="timeline-subtitle">KITRI, Vulnerability Analysis Track</div>
+                <div class="timeline-description">
+                    <ul>
+                        <li>Conducted Windows Kernel Driver 0-day research</li>
+                        <li>Reported <strong>106 vulnerabilities</strong> across Windows built-in drivers and 3rd-party drivers</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Conference & Publications -->
+        <section>
+            <h2 class="section-title"><i class="fas fa-microphone-alt"></i>Conference & Publications</h2>
+            
+            <div class="timeline-item">
+                <div class="timeline-header">
+                    <div class="timeline-title">Off-By-One 2025</div>
+                    <div class="timeline-date">2025</div>
+                </div>
+                <div class="timeline-subtitle">Singapore</div>
+                <div class="timeline-description">
+                    J. Kim, D. Kim. "COM-pletely Unplanned: A Windows Bug Hunter's Journey to LPE"
+                    <a href="#" target="_blank">[Link]</a>
+                </div>
+            </div>
+
+            <div class="timeline-item">
+                <div class="timeline-header">
+                    <div class="timeline-title">CODE BLUE 2024</div>
+                    <div class="timeline-date">Nov 2024</div>
+                </div>
+                <div class="timeline-subtitle">Tokyo, Japan</div>
+                <div class="timeline-description">
+                    S. Park, J. Kim, Y. Park. "1-Click-Fuzz: Systematically Fuzzing the Windows Kernel Driver with Symbolic Execution"
+                    <a href="https://codeblue.jp/en/program/time-table/day2-010/" target="_blank">[Link]</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Awards -->
+        <section>
+            <h2 class="section-title"><i class="fas fa-trophy"></i>Honors & Awards</h2>
+            
+            <div class="timeline-item">
+                <div class="timeline-header">
+                    <div class="timeline-title">DEF CON 33 CTF — 3rd Place</div>
+                    <div class="timeline-date">Aug 2025</div>
+                </div>
+                <div class="timeline-subtitle">Team SuperDiceCode</div>
+                <div class="timeline-description">
+                    Achieved 3rd place in the most prestigious global CTF competition.
+                </div>
+            </div>
+
+            <div class="timeline-item">
+                <div class="timeline-header">
+                    <div class="timeline-title">Information Security Specialized Scholarship</div>
+                    <div class="timeline-date">Spring & Fall 2024</div>
+                </div>
+                <div class="timeline-subtitle">Ajou University</div>
+                <div class="timeline-description">
+                    Awarded for outstanding achievements in the field of information security.
+                </div>
+            </div>
+
+            <div class="timeline-item">
+                <div class="timeline-header">
+                    <div class="timeline-title">SECCON CTF 13 — 13th Place</div>
+                    <div class="timeline-date">2024</div>
+                </div>
+                <div class="timeline-subtitle">Team Odin</div>
+            </div>
+
+            <div class="timeline-item">
+                <div class="timeline-header">
+                    <div class="timeline-title">Financial Security Institute FIESTA 2020</div>
+                    <div class="timeline-date">2020</div>
+                </div>
+                <div class="timeline-subtitle">Excellence Award</div>
+                <div class="timeline-description">
+                    Financial Security Threat Analysis Competition
+                </div>
+            </div>
+        </section>
+
+        <!-- CVEs -->
+        <section>
+            <h2 class="section-title"><i class="fas fa-shield-alt"></i>Vulnerability Disclosures</h2>
+            <p style="color: var(--text-muted); margin-bottom: 20px; font-size: 0.95em;">
+                Research conducted through code auditing, fuzzing, and leveraging LLM-based agents. 52+ CVE disclosures across Microsoft, Apple, and other vendors.
+            </p>
+            
+            <div class="cve-list">
+                <div class="cve-item">
+                    <div class="cve-header">
+                        <span class="cve-id">CVE-2025-59210</span>
+                        <span class="cve-date">Oct 2025</span>
+                    </div>
+                    <div class="cve-description">Windows ReFS Deduplication Service Vulnerability</div>
+                </div>
+                <div class="cve-item">
+                    <div class="cve-header">
+                        <span class="cve-id">CVE-2025-59198</span>
+                        <span class="cve-date">Oct 2025</span>
+                    </div>
+                    <div class="cve-description">Windows Search Service Vulnerability</div>
+                </div>
+                <div class="cve-item">
+                    <div class="cve-header">
+                        <span class="cve-id">CVE-2025-59190</span>
+                        <span class="cve-date">Oct 2025</span>
+                    </div>
+                    <div class="cve-description">Windows Search Service Vulnerability</div>
+                </div>
+                <div class="cve-item">
+                    <div class="cve-header">
+                        <span class="cve-id">CVE-2025-59289</span>
+                        <span class="cve-date">Sep 2025</span>
+                    </div>
+                    <div class="cve-description">Windows Bluetooth Service Vulnerability</div>
+                </div>
+                <div class="cve-item">
+                    <div class="cve-header">
+                        <span class="cve-id">CVE-2025-59220</span>
+                        <span class="cve-date">Sep 2025</span>
+                    </div>
+                    <div class="cve-description">Windows Bluetooth Service Vulnerability</div>
+                </div>
+            </div>
+            
+            <p style="margin-top: 20px; text-align: center;">
+                <a href="#" style="color: var(--accent-color); text-decoration: none; border-bottom: 1px solid var(--accent-color);">view all CVEs →</a>
+            </p>
+        </section>
+
+        <footer>
+            <p>© 2025 Jongseong Kim · Last updated October 2025</p>
+        </footer>
+    </div>
+</body>
+</html>
