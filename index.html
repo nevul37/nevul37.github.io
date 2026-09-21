@@ -4,8 +4,21 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Jongseong Kim</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <meta name="description" content="Jongseong Kim (nevul37) is a first-year M.S. student in Computer Science at the University of Illinois Urbana-Champaign, supervised by Lingming Zhang, working on AI agents for bug finding in Windows systems.">
+    <meta name="theme-color" content="#ffffff">
+    <link rel="canonical" href="https://nevul37.github.io/">
+
+    <meta property="og:type" content="profile">
+    <meta property="og:title" content="Jongseong Kim">
+    <meta property="og:description" content="M.S. student in Computer Science at UIUC. AI agents for bug finding in Windows systems.">
+    <meta property="og:url" content="https://nevul37.github.io/">
+    <meta name="twitter:card" content="summary">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/styles.css">
+
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-C3G9XGCKQ9"></script>
     <script>
@@ -17,277 +30,236 @@
     </script>
 </head>
 <body>
-    <div class="container">
-        <!-- Header -->
-        <header class="header">
-            <img src="assets/images/jongseong.jpg" alt="Jongseong Kim" class="profile-image">
-            <div class="header-content">
-                <h1>Jongseong Kim</h1>
-                <p>Offensive Security Researcher</p>
-                <div class="contact-links">
-                    <a href="mailto:nevul37@gmail.com"><i class="fas fa-envelope"></i>Email</a>
-                    <a href="https://www.linkedin.com/in/jongseongkim" target="_blank"><i class="fab fa-linkedin"></i>LinkedIn</a>
-                    <a href="https://github.com/nevul37" target="_blank"><i class="fab fa-github"></i>GitHub</a>
-                    <a href="https://x.com/nevul37" target="_blank"><i class="fab fa-twitter"></i>Twitter</a>
-                    <a href="cv.pdf" target="_blank"><i class="fas fa-file-pdf"></i>CV</a>
-                </div>
+    <nav class="nav">
+        <div class="wrap nav__inner">
+            <a class="nav__name" href="index.html">Jongseong Kim</a>
+            <div class="nav__links">
+                <a href="#publications">Publications</a>
+                <a class="is-secondary" href="#experience">Experience</a>
+                <a class="is-secondary" href="#honors">Honors</a>
+                <a href="pages/more-cves.html">CVEs</a>
+                <!-- CV temporarily disabled
+                <a href="cv.pdf" target="_blank" rel="noreferrer">CV</a>
+                -->
             </div>
-        </header>
-
-        <!-- Bio -->
-        <div class="bio">
-            <p>
-                I'm a Cybersecurity undergraduate at <a href="https://www.ajou.ac.kr/en/" target="_blank">Ajou University</a>, graduating in August 2025. I specialize in <strong>Windows offensive security</strong> and <strong>vulnerability research</strong>, focusing on discovering security vulnerabilities in Windows COM/RPC services, kernel drivers, and system internals using advanced techniques including static analysis and fuzzing.
-            </p>
-            <p>
-                I have been recognized as a <strong>Microsoft Security Response Center (MSRC) Most Valuable Researcher</strong>, ranking in the Global Top 100 across <strong>7 quarters</strong>. My research has resulted in <strong>60+ CVE disclosures.</strong>  
-            </p>
         </div>
+    </nav>
 
-        <!-- Highlights Section -->
-        <section>
-            <h2 class="section-title"><i class="fas fa-star"></i>highlights</h2>
-            
-            <div class="highlights-container">
-                <div class="news-item">
-                    <div class="news-date">Oct 2025</div>
-                    <div class="news-content">
-                        Listed on 🪟 <a href="https://msrc.microsoft.com/" target="_blank">MSRC</a>'s 2025 Q3 Most Valuable Researcher <a href="https://msrc.microsoft.com/leaderboard" target="_blank">Leaderboard</a></a>.
-                    </div>
-                </div>
+    <main class="wrap">
+        <section class="intro">
+            <div class="intro__body">
+                <h1>Jongseong Kim</h1>
+                <p class="intro__role">
+                    First-year M.S. student, Computer Science<br>
+                    University of Illinois Urbana-Champaign
+                </p>
 
-                <div class="news-item">
-                    <div class="news-date">Aug 2025</div>
-                    <div class="news-content">
-                        🏆 Achieved <strong>3rd place</strong> at <a href="https://ctftime.org/event/2897" target="_blank">DEF CON 33 CTF</a> with team SuperDiceCode!
-                    </div>
-                </div>
+                <p>
+                    I am a first-year M.S. student in Computer Science at UIUC, supervised by
+                    <a href="https://lingming.cs.illinois.edu/" target="_blank" rel="noreferrer">Lingming Zhang</a>.
+                    Before graduate school I worked as an offensive security researcher on Windows internals.
+                </p>
+                <p>
+                    My work is on AI agents that find bugs in Windows systems, benchmarks that measure how well
+                    they do it, and the tooling that makes both possible. Microsoft has recognized this work
+                    with listings on the Most Valuable Researcher leaderboard.
+                </p>
 
-                <div class="news-item">
-                    <div class="news-date">Jul 2025</div>
-                    <div class="news-content">
-                        Listed on 🪟 <a href="https://msrc.microsoft.com/" target="_blank">MSRC</a>'s 2025 Q2 Most Valuable Researcher <a href="https://msrc.microsoft.com/leaderboard" target="_blank">Leaderboard</a></a>.
-                    </div>
-                </div>
-
-                <div class="news-item">
-                    <div class="news-date">Jun 2025</div>
-                    <div class="news-content">
-                        ⭐ Listed on 🪟 <a href="https://msrc.microsoft.com/" target="_blank">MSRC</a>'s 2025 <strong>Annual</strong> Most Valuable Researcher <a href="https://msrc.microsoft.com/leaderboard" target="_blank">Leaderboard</a></a>.
-                    </div>
-                </div>
-                
-                <div class="news-item">
-                    <div class="news-date">May 2025</div>
-                    <div class="news-content">
-                        Spoke at <a href="https://offbyone.sg/conference/dongjun-kim-jongseong-kim" target="_blank">Off-by-One 2025</a> in Singapore about Windows COM vulnerabilities.
-                    </div>
-                </div>
-
-                <div class="news-item">
-                    <div class="news-date">Apr 2025</div>
-                    <div class="news-content">
-                        Listed on 🪟 <a href="https://msrc.microsoft.com/" target="_blank">MSRC</a>'s 2025 Q1 Most Valuable Researcher <a href="https://msrc.microsoft.com/leaderboard" target="_blank">Leaderboard</a></a>.
-                    </div>
-                </div>
-
-                <div class="news-item">
-                    <div class="news-date">Jan 2025</div>
-                    <div class="news-content">
-                        Listed on 🪟 <a href="https://msrc.microsoft.com/" target="_blank">MSRC</a>'s 2024 Q4 Most Valuable Researcher <a href="https://msrc.microsoft.com/leaderboard" target="_blank">Leaderboard</a></a>.
-                    </div>
-                </div>
-
-                <div class="news-item">
-                    <div class="news-date">Nov 2024</div>
-                    <div class="news-content">
-                        Spoke at <a href="https://codeblue.jp/en/program/time-table/day2-010/" target="_blank">CODE BLUE 2024</a> in Tokyo about <a href="https://github.com/0dayResearchLab/msfuzz" target="_blank">msFuzz</a>: systematically fuzzing Windows kernel drivers with symbolic execution.
-                    </div>
-                </div>
-
-                <div class="news-item">
-                    <div class="news-date">Oct 2024</div>
-                    <div class="news-content">
-                        Listed on 🪟 <a href="https://msrc.microsoft.com/" target="_blank">MSRC</a>'s 2024 Q3 Most Valuable Researcher <a href="https://msrc.microsoft.com/leaderboard" target="_blank">Leaderboard</a></a>.
-                    </div>
-                </div>
-
-                <div class="news-item">
-                    <div class="news-date">Jul 2024</div>
-                    <div class="news-content">
-                        Listed on 🪟 <a href="https://msrc.microsoft.com/" target="_blank">MSRC</a>'s 2024 Q2 Most Valuable Researcher <a href="https://msrc.microsoft.com/leaderboard" target="_blank">Leaderboard</a></a>.
-                    </div>
-                </div>
-
-                <div class="news-item">
-                    <div class="news-date">Jan 2024</div>
-                    <div class="news-content">
-                        Listed on 🪟 <a href="https://msrc.microsoft.com/" target="_blank">MSRC</a>'s 2023 Q4 Most Valuable Researcher <a href="https://msrc.microsoft.com/leaderboard" target="_blank">Leaderboard</a></a>.
-                    </div>
+                <div class="contact">
+                    <a href="mailto:nevul37@gmail.com">Email</a>
+                    <a href="https://github.com/nevul37" target="_blank" rel="noreferrer">GitHub</a>
+                    <a href="https://x.com/nevul37" target="_blank" rel="noreferrer">X</a>
+                    <a href="https://www.linkedin.com/in/jongseongkim" target="_blank" rel="noreferrer">LinkedIn</a>
+                    <!-- CV temporarily disabled
+                    <a href="cv.pdf" target="_blank" rel="noreferrer">CV</a>
+                    -->
                 </div>
             </div>
+            <!-- Photo temporarily disabled
+            <figure class="avatar">
+                <img src="assets/images/jongseong.jpg" alt="Jongseong Kim" width="840" height="1050">
+            </figure>
+            -->
         </section>
 
-        <!-- Experience -->
-        <section>
-            <h2 class="section-title"><i class="fas fa-briefcase"></i>Experience</h2>
-            
-            <div class="timeline-item">
-                <div class="timeline-header">
-                    <div class="timeline-title">Offensive Security Researcher</div>
-                    <div class="timeline-date">Sep 2024 – Present</div>
-                </div>
-                <div class="timeline-subtitle">ENKI WhiteHat, Seoul</div>
-                <div class="timeline-description">
-                    Focused on Windows offensive security research, analyzing kernel drivers, COM components, and system internals.
-                </div>
-            </div>
-
-            <div class="timeline-item">
-                <div class="timeline-header">
-                    <div class="timeline-title">Offensive Security Researcher</div>
-                    <div class="timeline-date">Mar 2024 – Jul 2024</div>
-                </div>
-                <div class="timeline-subtitle">CW Research, Seoul</div>
-                <div class="timeline-description">
-                    Researched Windows kernel security, focusing on fuzzing and vulnerability discovery in kernel drivers.
-                </div>
-            </div>
-
-            <div class="timeline-item">
-                <div class="timeline-header">
-                    <div class="timeline-title">Best of The Best 12th <a href="https://www.kitribob.kr/trainee_walk/hall" target="_blank">(Best 10)</a></a></div>
-                    <div class="timeline-date">Jul 2023 – Mar 2024</div>
-                </div>
-                <div class="timeline-subtitle">KITRI, Vulnerability Analysis Track</div>
-                <div class="timeline-description">
-                    <ul>
-                        <li>Conducted Windows Kernel Driver 0-day research</li>
-                        <li>Reported <strong>100+ vulnerabilities</strong> across Windows built-in drivers and 3rd-party drivers</li>
-                    </ul>
-                </div>
-            </div>
-
-            <div class="timeline-item">
-                <div class="timeline-header">
-                    <div class="timeline-title">Signal Intelligence/Electronic Warfare Operations</div>
-                    <div class="timeline-date">Dec 2021 – Jun 2023</div>
-                </div>
-                <div class="timeline-subtitle">Republic of Korea Army</div>
-                <div class="timeline-description">
-                    Served as a cybersecurity specialist in research division.
-                </div>
-            </div>            
-        </section>
-
-        <!-- Conference & Publications -->
-        <section>
-            <h2 class="section-title"><i class="fas fa-microphone-alt"></i>Conference & Publications</h2>
-            
-            <div class="timeline-item">
-                <div class="timeline-header">
-                    <div class="timeline-title">Off-By-One 2025</div>
-                    <div class="timeline-date">May 2025</div>
-                </div>
-                <div class="timeline-subtitle">Singapore</div>
-                <div class="timeline-description">
-                    <strong>J. Kim</strong>, D. Kim. "COM-pletely Unplanned: A Windows Bug Hunter's Journey to LPE"
-                    <a href="https://offbyone.sg/conference/dongjun-kim-jongseong-kim" target="_blank">[Link]</a>
-                </div>
-            </div>
-
-            <div class="timeline-item">
-                <div class="timeline-header">
-                    <div class="timeline-title">CODE BLUE 2024</div>
-                    <div class="timeline-date">Nov 2024</div>
-                </div>
-                <div class="timeline-subtitle">Tokyo, Japan</div>
-                <div class="timeline-description">
-                    S. Park, <strong>J. Kim</strong>, Y. Park. "1-Click-Fuzz: Systematically Fuzzing the Windows Kernel Driver with Symbolic Execution"
-                    <a href="https://archive.codeblue.jp/2024/en/program/time-table/day2-010/" target="_blank">[Link]</a>
-                </div>
-            </div>
-        </section>
-
-        <!-- Awards -->
-        <section>
-            <h2 class="section-title"><i class="fas fa-trophy"></i>Honors & Awards</h2>
-            
-            <div class="timeline-item">
-                <div class="timeline-header">
-                    <div class="timeline-title">DEF CON 33 CTF — 3rd Place</div>
-                    <div class="timeline-date">Aug 2025</div>
-                </div>
-                <div class="timeline-subtitle">Team SuperDiceCode</div>
-                <div class="timeline-description">
-                    Achieved 3rd place in the most prestigious global CTF competition.
-                </div>
-            </div>
-
-            <div class="timeline-item">
-                <div class="timeline-header">
-                    <div class="timeline-title">Financial Security Institute FIESTA 2020 — 3rd Place</div>
-                    <div class="timeline-date">Nov 2020</div>
-                </div>                
-                <div class="timeline-description">
-                    Financial Security Threat Analysis Competition
-                </div>
-            </div>
-        </section>
-
-        <!-- CVEs -->
-        <section>
-            <h2 class="section-title"><i class="fas fa-shield-alt"></i>Vulnerability Disclosures</h2>
-            <p style="color: var(--text-muted); margin-bottom: 20px; font-size: 0.95em;">
-                Research conducted through code auditing, fuzzing, and leveraging LLM-based agents. 60+ CVE disclosures across Microsoft, Apple, and other vendors.
-            </p>
-            
-            <div class="cve-list">
-                <div class="cve-item">
-                    <div class="cve-header">
-                        <span class="cve-id">CVE-2025-60717</span>
-                        <span class="cve-date">Nov 2025</span>
+        <section class="section" id="publications">
+            <h2>Publications</h2>
+            <ol class="pubs">
+                <li>
+                    <div class="pub__title">Agentic Vulnerability Reasoning on COTS Binaries</div>
+                    <div class="pub__authors">
+                        <a href="https://hwiwonl.ee/" target="_blank" rel="noreferrer">Hwiwon Lee</a>,
+                        <strong>Jongseong Kim</strong>, and
+                        <a href="https://lingming.cs.illinois.edu/" target="_blank" rel="noreferrer">Lingming Zhang</a>
                     </div>
-                    <div class="cve-description">Windows Broadcast DVR User Service Vulnerability</div>
-                </div>
-                <div class="cve-item">
-                    <div class="cve-header">
-                        <span class="cve-id">CVE-2025-59515</span>
-                        <span class="cve-date">Nov 2025</span>
+                    <div class="pub__venue">arXiv preprint arXiv:2605.05000, 2026</div>
+                    <div class="pub__foot">
+                        <span class="tag">39 zero-days, 23 assigned CVEs, $200,000+ in Microsoft bounty awards</span>
+                        <span class="pub__links">
+                            <a href="https://arxiv.org/abs/2605.05000" target="_blank" rel="noreferrer">arXiv</a>
+                            <a href="https://arxiv.org/pdf/2605.05000" target="_blank" rel="noreferrer">PDF</a>
+                        </span>
                     </div>
-                    <div class="cve-description">Windows Broadcast DVR User Service Vulnerability</div>
-                </div>
-                <div class="cve-item">
-                    <div class="cve-header">
-                        <span class="cve-id">CVE-2025-59210</span>
-                        <span class="cve-date">Oct 2025</span>
-                    </div>
-                    <div class="cve-description">Windows ReFS Deduplication Service Vulnerability</div>
-                </div>
-                <div class="cve-item">
-                    <div class="cve-header">
-                        <span class="cve-id">CVE-2025-59198</span>
-                        <span class="cve-date">Oct 2025</span>
-                    </div>
-                    <div class="cve-description">Windows Search Service Vulnerability</div>
-                </div>
-                <div class="cve-item">
-                    <div class="cve-header">
-                        <span class="cve-id">CVE-2025-59190</span>
-                        <span class="cve-date">Oct 2025</span>
-                    </div>
-                    <div class="cve-description">Windows Search Service Vulnerability</div>
-                </div>
-            </div>
-            
-            <p style="margin-top: 20px; text-align: center;">
-                <a href="pages/more-cves.html" style="color: var(--accent-color); text-decoration: none; border-bottom: 1px solid var(--accent-color);">view all CVEs →</a>
+                </li>
+            </ol>
+            <p class="note">
+                SLYP, an early prototype of SEC-agent, pairs tool servers for binary exploration and dynamic
+                debugging with debugger-verified proof-of-concept synthesis. On a 20-object COM benchmark it
+                recovers all 64 vulnerable entry functions, while default production coding agents miss up to 15
+                and produce no verified PoCs.
             </p>
         </section>
 
-        <footer>
-            <p>© 2025 Jongseong Kim (@nevul37)</p>
-        </footer>
-    </div>
+        <section class="section" id="talks">
+            <h2>Talks</h2>
+            <ol class="pubs">
+                <li>
+                    <div class="pub__title">COM-pletely Unplanned: A Windows Bug Hunter's Journey to LPE</div>
+                    <div class="pub__authors"><strong>Jongseong Kim</strong> and Dongjun Kim</div>
+                    <div class="pub__venue">Off-By-One 2025, Singapore</div>
+                </li>
+                <li>
+                    <div class="pub__title">1-Click-Fuzz: Systematically Fuzzing the Windows Kernel Driver with Symbolic Execution</div>
+                    <div class="pub__authors">Seunghyun Park, <strong>Jongseong Kim</strong>, and Younggi Park</div>
+                    <div class="pub__venue">CODE BLUE 2024, Tokyo</div>
+                    <div class="pub__foot">
+                        <span class="pub__links">
+                            <a href="https://archive.codeblue.jp/2024/en/program/time-table/day2-010/" target="_blank" rel="noreferrer">Session</a>
+                            <a href="https://github.com/0dayResearchLab/msfuzz" target="_blank" rel="noreferrer">Code</a>
+                        </span>
+                    </div>
+                </li>
+            </ol>
+        </section>
+
+        <section class="section" id="disclosures">
+            <h2>Vulnerability disclosures</h2>
+            <p>
+                My reports have received CVE assignments from Microsoft, Apple, and third-party driver vendors
+                between 2022 and 2026, mostly for elevation of privilege in Windows services and kernel
+                drivers. Microsoft has recognized these reports with seven quarterly
+                <a href="https://msrc.microsoft.com/leaderboard" target="_blank" rel="noreferrer">Most Valuable Researcher</a>
+                listings, including the 2026 annual leaderboard.
+            </p>
+            <a class="more-link" href="pages/more-cves.html">Browse all CVEs <span aria-hidden="true">&rarr;</span></a>
+        </section>
+
+        <section class="section" id="experience">
+            <h2>Experience</h2>
+            <div class="cv">
+                <div class="cv__row">
+                    <div>
+                        <div class="cv__org">University of Illinois Urbana-Champaign</div>
+                        <div class="cv__role">M.S. Student, Computer Science</div>
+                    </div>
+                    <div class="cv__date">2025 - Present</div>
+                </div>
+                <div class="cv__row">
+                    <div>
+                        <div class="cv__org">ENKI WhiteHat</div>
+                        <div class="cv__role">Offensive Security Researcher</div>
+                        <div class="cv__detail">Windows kernel drivers, COM components, and system internals.</div>
+                    </div>
+                    <div class="cv__date">Sep 2024 - Present</div>
+                </div>
+                <div class="cv__row">
+                    <div>
+                        <div class="cv__org">CW Research</div>
+                        <div class="cv__role">Offensive Security Researcher</div>
+                        <div class="cv__detail">Fuzzing and vulnerability discovery in Windows kernel drivers.</div>
+                    </div>
+                    <div class="cv__date">Mar 2024 - Jul 2024</div>
+                </div>
+                <div class="cv__row">
+                    <div>
+                        <div class="cv__org">KITRI</div>
+                        <div class="cv__role">
+                            Best of the Best 12th,
+                            <a href="https://www.kitribob.kr/trainee_walk/hall" target="_blank" rel="noreferrer">Best 10</a>
+                        </div>
+                        <div class="cv__detail">Windows kernel driver 0-day research; 100+ vulnerabilities reported.</div>
+                    </div>
+                    <div class="cv__date">Jul 2023 - Mar 2024</div>
+                </div>
+                <div class="cv__row">
+                    <div>
+                        <div class="cv__org">Republic of Korea Army</div>
+                        <div class="cv__role">Signal Intelligence / Electronic Warfare Operations</div>
+                        <div class="cv__detail">Cybersecurity specialist, research division.</div>
+                    </div>
+                    <div class="cv__date">Dec 2021 - Jun 2023</div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section" id="education">
+            <h2>Education</h2>
+            <div class="cv">
+                <div class="cv__row">
+                    <div>
+                        <div class="cv__org">University of Illinois Urbana-Champaign</div>
+                        <div class="cv__role">M.S. in Computer Science</div>
+                    </div>
+                    <div class="cv__date">2025 - Present</div>
+                </div>
+                <div class="cv__row">
+                    <div>
+                        <div class="cv__org">Ajou University</div>
+                        <div class="cv__role">B.Eng. in Cybersecurity</div>
+                    </div>
+                    <div class="cv__date">Aug 2025</div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section" id="honors">
+            <h2>Honors</h2>
+            <div class="cv">
+                <div class="cv__row">
+                    <div>
+                        <div class="cv__org">
+                            <a href="https://ctftime.org/event/3205/" target="_blank" rel="noreferrer">DEF CON 34 CTF Qualifier</a>,
+                            <em class="place">1st place</em>
+                        </div>
+                        <div class="cv__role">Team SuperDiceCodeLovers, out of 673 teams</div>
+                    </div>
+                    <div class="cv__date">May 2026</div>
+                </div>
+                <div class="cv__row">
+                    <div>
+                        <div class="cv__org">
+                            <a href="https://msrc.microsoft.com/leaderboard" target="_blank" rel="noreferrer">Microsoft Most Valuable Researcher</a>
+                        </div>
+                        <div class="cv__role">Seven quarterly listings, including the 2026 annual leaderboard</div>
+                    </div>
+                    <div class="cv__date">2023 - 2026</div>
+                </div>
+                <div class="cv__row">
+                    <div>
+                        <div class="cv__org">
+                            <a href="https://ctftime.org/event/2897" target="_blank" rel="noreferrer">DEF CON 33 CTF Finals</a>,
+                            <em class="place">3rd place</em>
+                        </div>
+                        <div class="cv__role">Team SuperDiceCodeLovers</div>
+                    </div>
+                    <div class="cv__date">Aug 2025</div>
+                </div>
+                <div class="cv__row">
+                    <div>
+                        <div class="cv__org">FIESTA 2020, <em class="place">3rd place</em></div>
+                        <div class="cv__role">Financial Security Institute, Threat Analysis Competition</div>
+                    </div>
+                    <div class="cv__date">Nov 2020</div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="wrap footer__inner">
+            <span>&copy; 2026 Jongseong Kim</span>
+            <span>Urbana, Illinois</span>
+        </div>
+    </footer>
 </body>
 </html>

@@ -3,919 +3,636 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CVE Disclosures - Jongseong Kim</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <title>CVEs | Jongseong Kim</title>
+    <meta name="description" content="List of 84 CVEs assigned to vulnerability reports by Jongseong Kim (nevul37), across Microsoft, Apple, and third-party vendors from 2022 to 2026.">
+    <meta name="theme-color" content="#ffffff">
+    <link rel="canonical" href="https://nevul37.github.io/pages/more-cves.html">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../css/styles.css">
-    <style>
-        .back-link {
-            display: inline-flex;
-            align-items: center;
-            gap: 8px;
-            color: var(--text-muted);
-            text-decoration: none;
-            margin-bottom: 30px;
-            font-size: 0.95em;
-            transition: color 0.3s;
-        }
-
-        .back-link:hover {
-            color: var(--accent-color);
-        }
-
-        .back-link i {
-            font-size: 0.9em;
-        }
-
-        .page-header {
-            margin-bottom: 40px;
-        }
-
-        .page-header h1 {
-            font-size: 2em;
-            font-weight: 700;
-            margin-bottom: 12px;
-            color: var(--text-color);
-        }
-
-        .page-header p {
-            color: var(--text-muted);
-            font-size: 1.05em;
-            line-height: 1.7;
-        }
-
-        .cve-stats {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-            gap: 20px;
-            margin-bottom: 40px;
-            padding: 25px;
-            background: var(--hover-bg);
-            border-radius: 8px;
-            border: 1px solid var(--border-color);
-        }
-
-        .cve-stat-item {
-            text-align: center;
-        }
-
-        .cve-stat-number {
-            font-size: 2.5em;
-            font-weight: 700;
-            color: var(--accent-color);
-            display: block;
-            margin-bottom: 5px;
-        }
-
-        .cve-stat-label {
-            font-size: 0.9em;
-            color: var(--text-muted);
-        }
-
-        .filter-tabs {
-            display: flex;
-            gap: 10px;
-            margin-bottom: 30px;
-            flex-wrap: wrap;
-        }
-
-        .filter-tab {
-            padding: 8px 16px;
-            background: var(--hover-bg);
-            border: 1px solid var(--border-color);
-            border-radius: 20px;
-            color: var(--text-muted);
-            font-size: 0.9em;
-            cursor: pointer;
-            transition: all 0.3s;
-        }
-
-        .filter-tab:hover,
-        .filter-tab.active {
-            background: var(--accent-color);
-            color: var(--bg-color);
-            border-color: var(--accent-color);
-        }
-
-        .cve-year-section {
-            margin-bottom: 50px;
-        }
-
-        .year-header {
-            font-size: 1.5em;
-            font-weight: 600;
-            margin-bottom: 20px;
-            color: var(--text-color);
-            display: flex;
-            align-items: center;
-            gap: 10px;
-        }
-
-        .year-header::before {
-            content: "";
-            width: 4px;
-            height: 24px;
-            background: var(--accent-color);
-            border-radius: 2px;
-        }
-
-        .cve-grid {
-            display: grid;
-            gap: 15px;
-        }
-
-        .cve-vendor {
-            font-size: 0.8em;
-            color: var(--text-muted);
-            margin-top: 2px;
-        }
-
-        .vendor-section {
-            margin-bottom: 50px;
-        }
-
-        .vendor-header {
-            font-size: 1.3em;
-            font-weight: 600;
-            margin-bottom: 20px;
-            color: var(--text-color);
-            display: flex;
-            align-items: center;
-            gap: 10px;
-        }
-
-        .vendor-header::before {
-            content: "";
-            width: 3px;
-            height: 20px;
-            background: var(--text-muted);
-            border-radius: 2px;
-        }
-    </style>
 </head>
 <body>
-    <div class="container">
-        <a href="index.html" class="back-link">
-            <i class="fas fa-arrow-left"></i>
-            Back to Home
-        </a>
+    <nav class="nav">
+        <div class="wrap wrap--wide nav__inner">
+            <a class="nav__name" href="../index.html">Jongseong Kim</a>
+            <div class="nav__links">
+                <a href="../index.html#publications">Publications</a>
+                <a class="is-secondary" href="../index.html#experience">Experience</a>
+                <a class="is-secondary" href="../index.html#honors">Honors</a>
+                <a href="more-cves.html" aria-current="page">CVEs</a>
+                <!-- CV temporarily disabled
+                <a href="../cv.pdf" target="_blank" rel="noreferrer">CV</a>
+                -->
+            </div>
+        </div>
+    </nav>
 
-        <div class="page-header">
-            <h1><i class="fas fa-shield-alt" style="color: var(--accent-color); margin-right: 12px;"></i>All CVE Disclosures</h1>
+    <main class="wrap wrap--wide">
+        <section class="archive-head">
+            <h1>CVEs</h1>
             <p>
-                Complete list of security vulnerabilities discovered through code auditing, fuzzing, and advanced research techniques. 
-                These disclosures span across Microsoft Windows components, Apple products, and third-party software.
+                84 CVEs assigned to my vulnerability reports between 2022 and 2026, across Microsoft, Apple,
+                and third-party driver vendors. Each entry links to the official advisory.
             </p>
+        </section>
+
+        <div class="toolbar">
+            <div class="search">
+                <label class="visually-hidden" for="cve-search">Search CVEs</label>
+                <input id="cve-search" type="search" placeholder="Search by CVE ID, product, or year" autocomplete="off">
+            </div>
+            <div class="chips" role="group" aria-label="Filter by vendor">
+                    <button class="chip" type="button" data-vendor="all" aria-pressed="true">All <span class="mono">84</span></button>
+                    <button class="chip" type="button" data-vendor="microsoft" aria-pressed="false">Microsoft <span class="mono">56</span></button>
+                    <button class="chip" type="button" data-vendor="apple" aria-pressed="false">Apple <span class="mono">3</span></button>
+                    <button class="chip" type="button" data-vendor="third-party" aria-pressed="false">Third-party <span class="mono">25</span></button>
+            </div>
+            <span class="count" id="cve-count">84 / 84</span>
         </div>
 
-        <div class="cve-stats">
-            <div class="cve-stat-item">
-                <span class="cve-stat-number">60+</span>
-                <span class="cve-stat-label">Total CVEs</span>
-            </div>
-            <div class="cve-stat-item">
-                <span class="cve-stat-number">7</span>
-                <span class="cve-stat-label">Quarters Ranked</span>
-            </div>
-            <div class="cve-stat-item">
-                <span class="cve-stat-number">2022-2025</span>
-                <span class="cve-stat-label">Active Years</span>
-            </div>
+        <div id="cve-archive">
+                <section class="year" data-year="2026">
+                    <h2 class="year__label">2026 <span class="mono">20</span></h2>
+                    <a class="cve-row" data-vendor="microsoft" data-search="cve-2026-70306 microsoft office sharepoint spoofing vulnerability microsoft aug 2026" href="https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-70306" target="_blank" rel="noreferrer">
+                        <span class="cve-row__id">CVE-2026-70306</span>
+                        <span class="cve-row__desc">Microsoft Office SharePoint Spoofing Vulnerability</span>
+                        <span class="cve-row__vendor">Microsoft</span>
+                        <span class="cve-row__date">Aug 2026</span>
+                    </a>
+                    <a class="cve-row" data-vendor="microsoft" data-search="cve-2026-68795 microsoft excel remote code execution vulnerability microsoft aug 2026" href="https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-68795" target="_blank" rel="noreferrer">
+                        <span class="cve-row__id">CVE-2026-68795</span>
+                        <span class="cve-row__desc">Microsoft Excel Remote Code Execution Vulnerability</span>
+                        <span class="cve-row__vendor">Microsoft</span>
+                        <span class="cve-row__date">Aug 2026</span>
+                    </a>
+                    <a class="cve-row" data-vendor="microsoft" data-search="cve-2026-64916 microsoft sharepoint server spoofing vulnerability microsoft aug 2026" href="https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-64916" target="_blank" rel="noreferrer">
+                        <span class="cve-row__id">CVE-2026-64916</span>
+                        <span class="cve-row__desc">Microsoft SharePoint Server Spoofing Vulnerability</span>
+                        <span class="cve-row__vendor">Microsoft</span>
+                        <span class="cve-row__date">Aug 2026</span>
+                    </a>
+                    <a class="cve-row" data-vendor="microsoft" data-search="cve-2026-61937 windows http.sys elevation of privilege vulnerability microsoft aug 2026" href="https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-61937" target="_blank" rel="noreferrer">
+                        <span class="cve-row__id">CVE-2026-61937</span>
+                        <span class="cve-row__desc">Windows HTTP.sys Elevation of Privilege Vulnerability</span>
+                        <span class="cve-row__vendor">Microsoft</span>
+                        <span class="cve-row__date">Aug 2026</span>
+                    </a>
+                    <a class="cve-row" data-vendor="microsoft" data-search="cve-2026-61366 windows network connection broker elevation of privilege vulnerability microsoft aug 2026" href="https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-61366" target="_blank" rel="noreferrer">
+                        <span class="cve-row__id">CVE-2026-61366</span>
+                        <span class="cve-row__desc">Windows Network Connection Broker Elevation of Privilege Vulnerability</span>
+                        <span class="cve-row__vendor">Microsoft</span>
+                        <span class="cve-row__date">Aug 2026</span>
+                    </a>
+                    <a class="cve-row" data-vendor="microsoft" data-search="cve-2026-61349 windows work folder service elevation of privilege vulnerability microsoft aug 2026" href="https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-61349" target="_blank" rel="noreferrer">
+                        <span class="cve-row__id">CVE-2026-61349</span>
+                        <span class="cve-row__desc">Windows Work Folder Service Elevation of Privilege Vulnerability</span>
+                        <span class="cve-row__vendor">Microsoft</span>
+                        <span class="cve-row__date">Aug 2026</span>
+                    </a>
+                    <a class="cve-row" data-vendor="microsoft" data-search="cve-2026-50490 windows installer elevation of privilege vulnerability microsoft jul 2026" href="https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-50490" target="_blank" rel="noreferrer">
+                        <span class="cve-row__id">CVE-2026-50490</span>
+                        <span class="cve-row__desc">Windows Installer Elevation of Privilege Vulnerability</span>
+                        <span class="cve-row__vendor">Microsoft</span>
+                        <span class="cve-row__date">Jul 2026</span>
+                    </a>
+                    <a class="cve-row" data-vendor="microsoft" data-search="cve-2026-50476 windows network connections service elevation of privilege vulnerability microsoft jul 2026" href="https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-50476" target="_blank" rel="noreferrer">
+                        <span class="cve-row__id">CVE-2026-50476</span>
+                        <span class="cve-row__desc">Windows Network Connections Service Elevation of Privilege Vulnerability</span>
+                        <span class="cve-row__vendor">Microsoft</span>
+                        <span class="cve-row__date">Jul 2026</span>
+                    </a>
+                    <a class="cve-row" data-vendor="microsoft" data-search="cve-2026-49183 windows clipboard server elevation of privilege vulnerability microsoft jul 2026" href="https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-49183" target="_blank" rel="noreferrer">
+                        <span class="cve-row__id">CVE-2026-49183</span>
+                        <span class="cve-row__desc">Windows Clipboard Server Elevation of Privilege Vulnerability</span>
+                        <span class="cve-row__vendor">Microsoft</span>
+                        <span class="cve-row__date">Jul 2026</span>
+                    </a>
+                    <a class="cve-row" data-vendor="apple" data-search="cve-2026-43739 apple multi-platform security vulnerability affecting ios, ipados, macos, and visionos apple jul 2026" href="https://support.apple.com/en-us/128066" target="_blank" rel="noreferrer">
+                        <span class="cve-row__id">CVE-2026-43739</span>
+                        <span class="cve-row__desc">Apple multi-platform security vulnerability affecting iOS, iPadOS, macOS, and visionOS</span>
+                        <span class="cve-row__vendor">Apple</span>
+                        <span class="cve-row__date">Jul 2026</span>
+                    </a>
+                    <a class="cve-row" data-vendor="microsoft" data-search="cve-2026-45502 microsoft exchange server information disclosure vulnerability microsoft jun 2026" href="https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-45502" target="_blank" rel="noreferrer">
+                        <span class="cve-row__id">CVE-2026-45502</span>
+                        <span class="cve-row__desc">Microsoft Exchange Server Information Disclosure Vulnerability</span>
+                        <span class="cve-row__vendor">Microsoft</span>
+                        <span class="cve-row__date">Jun 2026</span>
+                    </a>
+                    <a class="cve-row" data-vendor="microsoft" data-search="cve-2026-45501 microsoft exchange server spoofing vulnerability microsoft jun 2026" href="https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-45501" target="_blank" rel="noreferrer">
+                        <span class="cve-row__id">CVE-2026-45501</span>
+                        <span class="cve-row__desc">Microsoft Exchange Server Spoofing Vulnerability</span>
+                        <span class="cve-row__vendor">Microsoft</span>
+                        <span class="cve-row__date">Jun 2026</span>
+                    </a>
+                    <a class="cve-row" data-vendor="microsoft" data-search="cve-2026-42984 windows kernel elevation of privilege vulnerability microsoft jun 2026" href="https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-42984" target="_blank" rel="noreferrer">
+                        <span class="cve-row__id">CVE-2026-42984</span>
+                        <span class="cve-row__desc">Windows Kernel Elevation of Privilege Vulnerability</span>
+                        <span class="cve-row__vendor">Microsoft</span>
+                        <span class="cve-row__date">Jun 2026</span>
+                    </a>
+                    <a class="cve-row" data-vendor="microsoft" data-search="cve-2026-35420 windows kernel elevation of privilege vulnerability microsoft may 2026" href="https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-35420" target="_blank" rel="noreferrer">
+                        <span class="cve-row__id">CVE-2026-35420</span>
+                        <span class="cve-row__desc">Windows Kernel Elevation of Privilege Vulnerability</span>
+                        <span class="cve-row__vendor">Microsoft</span>
+                        <span class="cve-row__date">May 2026</span>
+                    </a>
+                    <a class="cve-row" data-vendor="microsoft" data-search="cve-2026-33840 windows win32k elevation of privilege vulnerability microsoft may 2026" href="https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-33840" target="_blank" rel="noreferrer">
+                        <span class="cve-row__id">CVE-2026-33840</span>
+                        <span class="cve-row__desc">Windows Win32k Elevation of Privilege Vulnerability</span>
+                        <span class="cve-row__vendor">Microsoft</span>
+                        <span class="cve-row__date">May 2026</span>
+                    </a>
+                    <a class="cve-row" data-vendor="microsoft" data-search="cve-2026-32223 windows usb print driver elevation of privilege vulnerability microsoft apr 2026" href="https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-32223" target="_blank" rel="noreferrer">
+                        <span class="cve-row__id">CVE-2026-32223</span>
+                        <span class="cve-row__desc">Windows USB Print Driver Elevation of Privilege Vulnerability</span>
+                        <span class="cve-row__vendor">Microsoft</span>
+                        <span class="cve-row__date">Apr 2026</span>
+                    </a>
+                    <a class="cve-row" data-vendor="microsoft" data-search="cve-2026-32195 windows kernel elevation of privilege vulnerability microsoft apr 2026" href="https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-32195" target="_blank" rel="noreferrer">
+                        <span class="cve-row__id">CVE-2026-32195</span>
+                        <span class="cve-row__desc">Windows Kernel Elevation of Privilege Vulnerability</span>
+                        <span class="cve-row__vendor">Microsoft</span>
+                        <span class="cve-row__date">Apr 2026</span>
+                    </a>
+                    <a class="cve-row" data-vendor="microsoft" data-search="cve-2026-23667 broadcast dvr elevation of privilege vulnerability microsoft mar 2026" href="https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-23667" target="_blank" rel="noreferrer">
+                        <span class="cve-row__id">CVE-2026-23667</span>
+                        <span class="cve-row__desc">Broadcast DVR Elevation of Privilege Vulnerability</span>
+                        <span class="cve-row__vendor">Microsoft</span>
+                        <span class="cve-row__date">Mar 2026</span>
+                    </a>
+                    <a class="cve-row" data-vendor="microsoft" data-search="cve-2026-20918 windows management services elevation of privilege vulnerability microsoft jan 2026" href="https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-20918" target="_blank" rel="noreferrer">
+                        <span class="cve-row__id">CVE-2026-20918</span>
+                        <span class="cve-row__desc">Windows Management Services Elevation of Privilege Vulnerability</span>
+                        <span class="cve-row__vendor">Microsoft</span>
+                        <span class="cve-row__date">Jan 2026</span>
+                    </a>
+                    <a class="cve-row" data-vendor="microsoft" data-search="cve-2026-20835 capability access management service information disclosure vulnerability microsoft jan 2026" href="https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-20835" target="_blank" rel="noreferrer">
+                        <span class="cve-row__id">CVE-2026-20835</span>
+                        <span class="cve-row__desc">Capability Access Management Service Information Disclosure Vulnerability</span>
+                        <span class="cve-row__vendor">Microsoft</span>
+                        <span class="cve-row__date">Jan 2026</span>
+                    </a>
+                </section>
+
+                <section class="year" data-year="2025">
+                    <h2 class="year__label">2025 <span class="mono">31</span></h2>
+                    <a class="cve-row" data-vendor="microsoft" data-search="cve-2025-60717 windows broadcast dvr user service vulnerability microsoft nov 2025" href="https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-60717" target="_blank" rel="noreferrer">
+                        <span class="cve-row__id">CVE-2025-60717</span>
+                        <span class="cve-row__desc">Windows Broadcast DVR User Service Vulnerability</span>
+                        <span class="cve-row__vendor">Microsoft</span>
+                        <span class="cve-row__date">Nov 2025</span>
+                    </a>
+                    <a class="cve-row" data-vendor="microsoft" data-search="cve-2025-59515 windows broadcast dvr user service vulnerability microsoft nov 2025" href="https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-59515" target="_blank" rel="noreferrer">
+                        <span class="cve-row__id">CVE-2025-59515</span>
+                        <span class="cve-row__desc">Windows Broadcast DVR User Service Vulnerability</span>
+                        <span class="cve-row__vendor">Microsoft</span>
+                        <span class="cve-row__date">Nov 2025</span>
+                    </a>
+                    <a class="cve-row" data-vendor="microsoft" data-search="cve-2025-59210 windows refs deduplication service vulnerability microsoft oct 2025" href="https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-59210" target="_blank" rel="noreferrer">
+                        <span class="cve-row__id">CVE-2025-59210</span>
+                        <span class="cve-row__desc">Windows ReFS Deduplication Service Vulnerability</span>
+                        <span class="cve-row__vendor">Microsoft</span>
+                        <span class="cve-row__date">Oct 2025</span>
+                    </a>
+                    <a class="cve-row" data-vendor="microsoft" data-search="cve-2025-59198 windows search service vulnerability microsoft oct 2025" href="https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-59198" target="_blank" rel="noreferrer">
+                        <span class="cve-row__id">CVE-2025-59198</span>
+                        <span class="cve-row__desc">Windows Search Service Vulnerability</span>
+                        <span class="cve-row__vendor">Microsoft</span>
+                        <span class="cve-row__date">Oct 2025</span>
+                    </a>
+                    <a class="cve-row" data-vendor="microsoft" data-search="cve-2025-59190 windows search service vulnerability microsoft oct 2025" href="https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-59190" target="_blank" rel="noreferrer">
+                        <span class="cve-row__id">CVE-2025-59190</span>
+                        <span class="cve-row__desc">Windows Search Service Vulnerability</span>
+                        <span class="cve-row__vendor">Microsoft</span>
+                        <span class="cve-row__date">Oct 2025</span>
+                    </a>
+                    <a class="cve-row" data-vendor="microsoft" data-search="cve-2025-55691 windows printworkflowusersvc vulnerability microsoft oct 2025" href="https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-55691" target="_blank" rel="noreferrer">
+                        <span class="cve-row__id">CVE-2025-55691</span>
+                        <span class="cve-row__desc">Windows PrintWorkflowUserSvc Vulnerability</span>
+                        <span class="cve-row__vendor">Microsoft</span>
+                        <span class="cve-row__date">Oct 2025</span>
+                    </a>
+                    <a class="cve-row" data-vendor="microsoft" data-search="cve-2025-55690 windows printworkflowusersvc vulnerability microsoft oct 2025" href="https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-55690" target="_blank" rel="noreferrer">
+                        <span class="cve-row__id">CVE-2025-55690</span>
+                        <span class="cve-row__desc">Windows PrintWorkflowUserSvc Vulnerability</span>
+                        <span class="cve-row__vendor">Microsoft</span>
+                        <span class="cve-row__date">Oct 2025</span>
+                    </a>
+                    <a class="cve-row" data-vendor="microsoft" data-search="cve-2025-55689 windows printworkflowusersvc vulnerability microsoft oct 2025" href="https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-55689" target="_blank" rel="noreferrer">
+                        <span class="cve-row__id">CVE-2025-55689</span>
+                        <span class="cve-row__desc">Windows PrintWorkflowUserSvc Vulnerability</span>
+                        <span class="cve-row__vendor">Microsoft</span>
+                        <span class="cve-row__date">Oct 2025</span>
+                    </a>
+                    <a class="cve-row" data-vendor="microsoft" data-search="cve-2025-55688 windows printworkflowusersvc vulnerability microsoft oct 2025" href="https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-55688" target="_blank" rel="noreferrer">
+                        <span class="cve-row__id">CVE-2025-55688</span>
+                        <span class="cve-row__desc">Windows PrintWorkflowUserSvc Vulnerability</span>
+                        <span class="cve-row__vendor">Microsoft</span>
+                        <span class="cve-row__date">Oct 2025</span>
+                    </a>
+                    <a class="cve-row" data-vendor="microsoft" data-search="cve-2025-55686 windows printworkflowusersvc vulnerability microsoft oct 2025" href="https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-55686" target="_blank" rel="noreferrer">
+                        <span class="cve-row__id">CVE-2025-55686</span>
+                        <span class="cve-row__desc">Windows PrintWorkflowUserSvc Vulnerability</span>
+                        <span class="cve-row__vendor">Microsoft</span>
+                        <span class="cve-row__date">Oct 2025</span>
+                    </a>
+                    <a class="cve-row" data-vendor="microsoft" data-search="cve-2025-55685 windows printworkflowusersvc vulnerability microsoft oct 2025" href="https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-55685" target="_blank" rel="noreferrer">
+                        <span class="cve-row__id">CVE-2025-55685</span>
+                        <span class="cve-row__desc">Windows PrintWorkflowUserSvc Vulnerability</span>
+                        <span class="cve-row__vendor">Microsoft</span>
+                        <span class="cve-row__date">Oct 2025</span>
+                    </a>
+                    <a class="cve-row" data-vendor="microsoft" data-search="cve-2025-55684 windows printworkflowusersvc vulnerability microsoft oct 2025" href="https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-55684" target="_blank" rel="noreferrer">
+                        <span class="cve-row__id">CVE-2025-55684</span>
+                        <span class="cve-row__desc">Windows PrintWorkflowUserSvc Vulnerability</span>
+                        <span class="cve-row__vendor">Microsoft</span>
+                        <span class="cve-row__date">Oct 2025</span>
+                    </a>
+                    <a class="cve-row" data-vendor="microsoft" data-search="cve-2025-55677 windows device association broker service vulnerability microsoft oct 2025" href="https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-55677" target="_blank" rel="noreferrer">
+                        <span class="cve-row__id">CVE-2025-55677</span>
+                        <span class="cve-row__desc">Windows Device Association Broker Service Vulnerability</span>
+                        <span class="cve-row__vendor">Microsoft</span>
+                        <span class="cve-row__date">Oct 2025</span>
+                    </a>
+                    <a class="cve-row" data-vendor="microsoft" data-search="cve-2025-53150 windows digital media service vulnerability microsoft oct 2025" href="https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-53150" target="_blank" rel="noreferrer">
+                        <span class="cve-row__id">CVE-2025-53150</span>
+                        <span class="cve-row__desc">Windows Digital Media Service Vulnerability</span>
+                        <span class="cve-row__vendor">Microsoft</span>
+                        <span class="cve-row__date">Oct 2025</span>
+                    </a>
+                    <a class="cve-row" data-vendor="microsoft" data-search="cve-2025-50174 windows device association broker service vulnerability microsoft oct 2025" href="https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-50174" target="_blank" rel="noreferrer">
+                        <span class="cve-row__id">CVE-2025-50174</span>
+                        <span class="cve-row__desc">Windows Device Association Broker Service Vulnerability</span>
+                        <span class="cve-row__vendor">Microsoft</span>
+                        <span class="cve-row__date">Oct 2025</span>
+                    </a>
+                    <a class="cve-row" data-vendor="microsoft" data-search="cve-2025-59289 windows bluetooth service vulnerability microsoft sep 2025" href="https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-59289" target="_blank" rel="noreferrer">
+                        <span class="cve-row__id">CVE-2025-59289</span>
+                        <span class="cve-row__desc">Windows Bluetooth Service Vulnerability</span>
+                        <span class="cve-row__vendor">Microsoft</span>
+                        <span class="cve-row__date">Sep 2025</span>
+                    </a>
+                    <a class="cve-row" data-vendor="microsoft" data-search="cve-2025-59220 windows bluetooth service vulnerability microsoft sep 2025" href="https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-59220" target="_blank" rel="noreferrer">
+                        <span class="cve-row__id">CVE-2025-59220</span>
+                        <span class="cve-row__desc">Windows Bluetooth Service Vulnerability</span>
+                        <span class="cve-row__vendor">Microsoft</span>
+                        <span class="cve-row__date">Sep 2025</span>
+                    </a>
+                    <a class="cve-row" data-vendor="microsoft" data-search="cve-2025-53802 windows bluetooth service vulnerability microsoft sep 2025" href="https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-53802" target="_blank" rel="noreferrer">
+                        <span class="cve-row__id">CVE-2025-53802</span>
+                        <span class="cve-row__desc">Windows Bluetooth Service Vulnerability</span>
+                        <span class="cve-row__vendor">Microsoft</span>
+                        <span class="cve-row__date">Sep 2025</span>
+                    </a>
+                    <a class="cve-row" data-vendor="microsoft" data-search="cve-2025-53133 windows printworkflowusersvc vulnerability microsoft aug 2025" href="https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-53133" target="_blank" rel="noreferrer">
+                        <span class="cve-row__id">CVE-2025-53133</span>
+                        <span class="cve-row__desc">Windows PrintWorkflowUserSvc Vulnerability</span>
+                        <span class="cve-row__vendor">Microsoft</span>
+                        <span class="cve-row__date">Aug 2025</span>
+                    </a>
+                    <a class="cve-row" data-vendor="microsoft" data-search="cve-2025-49664 windows user-mode driver framework host vulnerability microsoft jul 2025" href="https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-49664" target="_blank" rel="noreferrer">
+                        <span class="cve-row__id">CVE-2025-49664</span>
+                        <span class="cve-row__desc">Windows User-Mode Driver Framework Host Vulnerability</span>
+                        <span class="cve-row__vendor">Microsoft</span>
+                        <span class="cve-row__date">Jul 2025</span>
+                    </a>
+                    <a class="cve-row" data-vendor="microsoft" data-search="cve-2025-29838 windows executioncontext driver vulnerability microsoft may 2025" href="https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-29838" target="_blank" rel="noreferrer">
+                        <span class="cve-row__id">CVE-2025-29838</span>
+                        <span class="cve-row__desc">Windows ExecutionContext Driver Vulnerability</span>
+                        <span class="cve-row__vendor">Microsoft</span>
+                        <span class="cve-row__date">May 2025</span>
+                    </a>
+                    <a class="cve-row" data-vendor="third-party" data-search="cve-2025-48071 third-party driver vulnerability third-party apr 2025" href="https://www.cve.org/CVERecord?id=CVE-2025-48071" target="_blank" rel="noreferrer">
+                        <span class="cve-row__id">CVE-2025-48071</span>
+                        <span class="cve-row__desc">Third-Party Driver Vulnerability</span>
+                        <span class="cve-row__vendor">Third-Party</span>
+                        <span class="cve-row__date">Apr 2025</span>
+                    </a>
+                    <a class="cve-row" data-vendor="microsoft" data-search="cve-2025-27730 windows digital media service vulnerability microsoft apr 2025" href="https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-27730" target="_blank" rel="noreferrer">
+                        <span class="cve-row__id">CVE-2025-27730</span>
+                        <span class="cve-row__desc">Windows Digital Media Service Vulnerability</span>
+                        <span class="cve-row__vendor">Microsoft</span>
+                        <span class="cve-row__date">Apr 2025</span>
+                    </a>
+                    <a class="cve-row" data-vendor="microsoft" data-search="cve-2025-27476 windows digital media service vulnerability microsoft apr 2025" href="https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-27476" target="_blank" rel="noreferrer">
+                        <span class="cve-row__id">CVE-2025-27476</span>
+                        <span class="cve-row__desc">Windows Digital Media Service Vulnerability</span>
+                        <span class="cve-row__vendor">Microsoft</span>
+                        <span class="cve-row__date">Apr 2025</span>
+                    </a>
+                    <a class="cve-row" data-vendor="microsoft" data-search="cve-2025-27475 windows update stack vulnerability microsoft apr 2025" href="https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-27475" target="_blank" rel="noreferrer">
+                        <span class="cve-row__id">CVE-2025-27475</span>
+                        <span class="cve-row__desc">Windows Update Stack Vulnerability</span>
+                        <span class="cve-row__vendor">Microsoft</span>
+                        <span class="cve-row__date">Apr 2025</span>
+                    </a>
+                    <a class="cve-row" data-vendor="microsoft" data-search="cve-2025-27467 windows digital media service vulnerability microsoft apr 2025" href="https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-27467" target="_blank" rel="noreferrer">
+                        <span class="cve-row__id">CVE-2025-27467</span>
+                        <span class="cve-row__desc">Windows Digital Media Service Vulnerability</span>
+                        <span class="cve-row__vendor">Microsoft</span>
+                        <span class="cve-row__date">Apr 2025</span>
+                    </a>
+                    <a class="cve-row" data-vendor="microsoft" data-search="cve-2025-26688 microsoft virtual hard disk vulnerability microsoft apr 2025" href="https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-26688" target="_blank" rel="noreferrer">
+                        <span class="cve-row__id">CVE-2025-26688</span>
+                        <span class="cve-row__desc">Microsoft Virtual Hard Disk Vulnerability</span>
+                        <span class="cve-row__vendor">Microsoft</span>
+                        <span class="cve-row__date">Apr 2025</span>
+                    </a>
+                    <a class="cve-row" data-vendor="microsoft" data-search="cve-2025-21183 windows refs deduplication service vulnerability microsoft feb 2025" href="https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-21183" target="_blank" rel="noreferrer">
+                        <span class="cve-row__id">CVE-2025-21183</span>
+                        <span class="cve-row__desc">Windows ReFS Deduplication Service Vulnerability</span>
+                        <span class="cve-row__vendor">Microsoft</span>
+                        <span class="cve-row__date">Feb 2025</span>
+                    </a>
+                    <a class="cve-row" data-vendor="microsoft" data-search="cve-2025-21182 windows refs deduplication service vulnerability microsoft feb 2025" href="https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-21182" target="_blank" rel="noreferrer">
+                        <span class="cve-row__id">CVE-2025-21182</span>
+                        <span class="cve-row__desc">Windows ReFS Deduplication Service Vulnerability</span>
+                        <span class="cve-row__vendor">Microsoft</span>
+                        <span class="cve-row__date">Feb 2025</span>
+                    </a>
+                    <a class="cve-row" data-vendor="microsoft" data-search="cve-2025-21235 windows printworkflowusersvc vulnerability microsoft jan 2025" href="https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-21235" target="_blank" rel="noreferrer">
+                        <span class="cve-row__id">CVE-2025-21235</span>
+                        <span class="cve-row__desc">Windows PrintWorkflowUserSvc Vulnerability</span>
+                        <span class="cve-row__vendor">Microsoft</span>
+                        <span class="cve-row__date">Jan 2025</span>
+                    </a>
+                    <a class="cve-row" data-vendor="microsoft" data-search="cve-2025-21234 windows printworkflowusersvc vulnerability microsoft jan 2025" href="https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-21234" target="_blank" rel="noreferrer">
+                        <span class="cve-row__id">CVE-2025-21234</span>
+                        <span class="cve-row__desc">Windows PrintWorkflowUserSvc Vulnerability</span>
+                        <span class="cve-row__vendor">Microsoft</span>
+                        <span class="cve-row__date">Jan 2025</span>
+                    </a>
+                </section>
+
+                <section class="year" data-year="2024">
+                    <h2 class="year__label">2024 <span class="mono">18</span></h2>
+                    <a class="cve-row" data-vendor="microsoft" data-search="cve-2024-49097 windows printworkflowusersvc vulnerability microsoft dec 2024" href="https://msrc.microsoft.com/update-guide/vulnerability/CVE-2024-49097" target="_blank" rel="noreferrer">
+                        <span class="cve-row__id">CVE-2024-49097</span>
+                        <span class="cve-row__desc">Windows PrintWorkflowUserSvc Vulnerability</span>
+                        <span class="cve-row__vendor">Microsoft</span>
+                        <span class="cve-row__date">Dec 2024</span>
+                    </a>
+                    <a class="cve-row" data-vendor="microsoft" data-search="cve-2024-49095 windows printworkflowusersvc vulnerability microsoft dec 2024" href="https://msrc.microsoft.com/update-guide/vulnerability/CVE-2024-49095" target="_blank" rel="noreferrer">
+                        <span class="cve-row__id">CVE-2024-49095</span>
+                        <span class="cve-row__desc">Windows PrintWorkflowUserSvc Vulnerability</span>
+                        <span class="cve-row__vendor">Microsoft</span>
+                        <span class="cve-row__date">Dec 2024</span>
+                    </a>
+                    <a class="cve-row" data-vendor="microsoft" data-search="cve-2024-43624 windows hyper-v shared virtual disk vulnerability microsoft nov 2024" href="https://msrc.microsoft.com/update-guide/vulnerability/CVE-2024-43624" target="_blank" rel="noreferrer">
+                        <span class="cve-row__id">CVE-2024-43624</span>
+                        <span class="cve-row__desc">Windows Hyper-V Shared Virtual Disk Vulnerability</span>
+                        <span class="cve-row__vendor">Microsoft</span>
+                        <span class="cve-row__date">Nov 2024</span>
+                    </a>
+                    <a class="cve-row" data-vendor="third-party" data-search="cve-2024-45182 wibukey driver out-of-bounds read vulnerability wibu-systems sep 2024" href="https://www.cve.org/CVERecord?id=CVE-2024-45182" target="_blank" rel="noreferrer">
+                        <span class="cve-row__id">CVE-2024-45182</span>
+                        <span class="cve-row__desc">WibuKey Driver Out-of-Bounds Read Vulnerability</span>
+                        <span class="cve-row__vendor">WIBU-SYSTEMS</span>
+                        <span class="cve-row__date">Sep 2024</span>
+                    </a>
+                    <a class="cve-row" data-vendor="third-party" data-search="cve-2024-45181 wibukey driver arbitrary address write vulnerability wibu-systems sep 2024" href="https://www.cve.org/CVERecord?id=CVE-2024-45181" target="_blank" rel="noreferrer">
+                        <span class="cve-row__id">CVE-2024-45181</span>
+                        <span class="cve-row__desc">WibuKey Driver Arbitrary Address Write Vulnerability</span>
+                        <span class="cve-row__vendor">WIBU-SYSTEMS</span>
+                        <span class="cve-row__date">Sep 2024</span>
+                    </a>
+                    <a class="cve-row" data-vendor="microsoft" data-search="cve-2024-38155 security center broker vulnerability microsoft aug 2024" href="https://msrc.microsoft.com/update-guide/vulnerability/CVE-2024-38155" target="_blank" rel="noreferrer">
+                        <span class="cve-row__id">CVE-2024-38155</span>
+                        <span class="cve-row__desc">Security Center Broker Vulnerability</span>
+                        <span class="cve-row__vendor">Microsoft</span>
+                        <span class="cve-row__date">Aug 2024</span>
+                    </a>
+                    <a class="cve-row" data-vendor="third-party" data-search="cve-2024-26314 third-party driver vulnerability third-party apr 2024" href="https://www.cve.org/CVERecord?id=CVE-2024-26314" target="_blank" rel="noreferrer">
+                        <span class="cve-row__id">CVE-2024-26314</span>
+                        <span class="cve-row__desc">Third-Party Driver Vulnerability</span>
+                        <span class="cve-row__vendor">Third-Party</span>
+                        <span class="cve-row__date">Apr 2024</span>
+                    </a>
+                    <a class="cve-row" data-vendor="third-party" data-search="cve-2024-25088 third-party driver vulnerability third-party mar 2024" href="https://www.cve.org/CVERecord?id=CVE-2024-25088" target="_blank" rel="noreferrer">
+                        <span class="cve-row__id">CVE-2024-25088</span>
+                        <span class="cve-row__desc">Third-Party Driver Vulnerability</span>
+                        <span class="cve-row__vendor">Third-Party</span>
+                        <span class="cve-row__date">Mar 2024</span>
+                    </a>
+                    <a class="cve-row" data-vendor="third-party" data-search="cve-2024-25087 third-party driver vulnerability third-party mar 2024" href="https://www.cve.org/CVERecord?id=CVE-2024-25087" target="_blank" rel="noreferrer">
+                        <span class="cve-row__id">CVE-2024-25087</span>
+                        <span class="cve-row__desc">Third-Party Driver Vulnerability</span>
+                        <span class="cve-row__vendor">Third-Party</span>
+                        <span class="cve-row__date">Mar 2024</span>
+                    </a>
+                    <a class="cve-row" data-vendor="third-party" data-search="cve-2024-25086 third-party driver vulnerability third-party mar 2024" href="https://www.cve.org/CVERecord?id=CVE-2024-25086" target="_blank" rel="noreferrer">
+                        <span class="cve-row__id">CVE-2024-25086</span>
+                        <span class="cve-row__desc">Third-Party Driver Vulnerability</span>
+                        <span class="cve-row__vendor">Third-Party</span>
+                        <span class="cve-row__date">Mar 2024</span>
+                    </a>
+                    <a class="cve-row" data-vendor="third-party" data-search="cve-2024-22106 third-party driver vulnerability third-party mar 2024" href="https://www.cve.org/CVERecord?id=CVE-2024-22106" target="_blank" rel="noreferrer">
+                        <span class="cve-row__id">CVE-2024-22106</span>
+                        <span class="cve-row__desc">Third-Party Driver Vulnerability</span>
+                        <span class="cve-row__vendor">Third-Party</span>
+                        <span class="cve-row__date">Mar 2024</span>
+                    </a>
+                    <a class="cve-row" data-vendor="third-party" data-search="cve-2024-22105 third-party driver vulnerability third-party mar 2024" href="https://www.cve.org/CVERecord?id=CVE-2024-22105" target="_blank" rel="noreferrer">
+                        <span class="cve-row__id">CVE-2024-22105</span>
+                        <span class="cve-row__desc">Third-Party Driver Vulnerability</span>
+                        <span class="cve-row__vendor">Third-Party</span>
+                        <span class="cve-row__date">Mar 2024</span>
+                    </a>
+                    <a class="cve-row" data-vendor="third-party" data-search="cve-2024-22104 third-party driver vulnerability third-party mar 2024" href="https://www.cve.org/CVERecord?id=CVE-2024-22104" target="_blank" rel="noreferrer">
+                        <span class="cve-row__id">CVE-2024-22104</span>
+                        <span class="cve-row__desc">Third-Party Driver Vulnerability</span>
+                        <span class="cve-row__vendor">Third-Party</span>
+                        <span class="cve-row__date">Mar 2024</span>
+                    </a>
+                    <a class="cve-row" data-vendor="third-party" data-search="cve-2024-22103 third-party driver vulnerability third-party mar 2024" href="https://www.cve.org/CVERecord?id=CVE-2024-22103" target="_blank" rel="noreferrer">
+                        <span class="cve-row__id">CVE-2024-22103</span>
+                        <span class="cve-row__desc">Third-Party Driver Vulnerability</span>
+                        <span class="cve-row__vendor">Third-Party</span>
+                        <span class="cve-row__date">Mar 2024</span>
+                    </a>
+                    <a class="cve-row" data-vendor="third-party" data-search="cve-2024-22102 third-party driver vulnerability third-party mar 2024" href="https://www.cve.org/CVERecord?id=CVE-2024-22102" target="_blank" rel="noreferrer">
+                        <span class="cve-row__id">CVE-2024-22102</span>
+                        <span class="cve-row__desc">Third-Party Driver Vulnerability</span>
+                        <span class="cve-row__vendor">Third-Party</span>
+                        <span class="cve-row__date">Mar 2024</span>
+                    </a>
+                    <a class="cve-row" data-vendor="microsoft" data-search="cve-2024-21445 windows usb print driver vulnerability microsoft mar 2024" href="https://msrc.microsoft.com/update-guide/vulnerability/CVE-2024-21445" target="_blank" rel="noreferrer">
+                        <span class="cve-row__id">CVE-2024-21445</span>
+                        <span class="cve-row__desc">Windows USB Print Driver Vulnerability</span>
+                        <span class="cve-row__vendor">Microsoft</span>
+                        <span class="cve-row__date">Mar 2024</span>
+                    </a>
+                    <a class="cve-row" data-vendor="microsoft" data-search="cve-2024-21442 windows usb print driver vulnerability microsoft mar 2024" href="https://msrc.microsoft.com/update-guide/vulnerability/CVE-2024-21442" target="_blank" rel="noreferrer">
+                        <span class="cve-row__id">CVE-2024-21442</span>
+                        <span class="cve-row__desc">Windows USB Print Driver Vulnerability</span>
+                        <span class="cve-row__vendor">Microsoft</span>
+                        <span class="cve-row__date">Mar 2024</span>
+                    </a>
+                    <a class="cve-row" data-vendor="microsoft" data-search="cve-2024-20653 microsoft common log file system vulnerability microsoft jan 2024" href="https://msrc.microsoft.com/update-guide/vulnerability/CVE-2024-20653" target="_blank" rel="noreferrer">
+                        <span class="cve-row__id">CVE-2024-20653</span>
+                        <span class="cve-row__desc">Microsoft Common Log File System Vulnerability</span>
+                        <span class="cve-row__vendor">Microsoft</span>
+                        <span class="cve-row__date">Jan 2024</span>
+                    </a>
+                </section>
+
+                <section class="year" data-year="2023">
+                    <h2 class="year__label">2023 <span class="mono">13</span></h2>
+                    <a class="cve-row" data-vendor="third-party" data-search="cve-2023-51778 third-party driver vulnerability third-party dec 2023" href="https://www.cve.org/CVERecord?id=CVE-2023-51778" target="_blank" rel="noreferrer">
+                        <span class="cve-row__id">CVE-2023-51778</span>
+                        <span class="cve-row__desc">Third-Party Driver Vulnerability</span>
+                        <span class="cve-row__vendor">Third-Party</span>
+                        <span class="cve-row__date">Dec 2023</span>
+                    </a>
+                    <a class="cve-row" data-vendor="third-party" data-search="cve-2023-51777 third-party driver vulnerability third-party dec 2023" href="https://www.cve.org/CVERecord?id=CVE-2023-51777" target="_blank" rel="noreferrer">
+                        <span class="cve-row__id">CVE-2023-51777</span>
+                        <span class="cve-row__desc">Third-Party Driver Vulnerability</span>
+                        <span class="cve-row__vendor">Third-Party</span>
+                        <span class="cve-row__date">Dec 2023</span>
+                    </a>
+                    <a class="cve-row" data-vendor="third-party" data-search="cve-2023-51776 third-party driver vulnerability third-party dec 2023" href="https://www.cve.org/CVERecord?id=CVE-2023-51776" target="_blank" rel="noreferrer">
+                        <span class="cve-row__id">CVE-2023-51776</span>
+                        <span class="cve-row__desc">Third-Party Driver Vulnerability</span>
+                        <span class="cve-row__vendor">Third-Party</span>
+                        <span class="cve-row__date">Dec 2023</span>
+                    </a>
+                    <a class="cve-row" data-vendor="third-party" data-search="cve-2023-47572 third-party driver vulnerability third-party nov 2023" href="https://www.cve.org/CVERecord?id=CVE-2023-47572" target="_blank" rel="noreferrer">
+                        <span class="cve-row__id">CVE-2023-47572</span>
+                        <span class="cve-row__desc">Third-Party Driver Vulnerability</span>
+                        <span class="cve-row__vendor">Third-Party</span>
+                        <span class="cve-row__date">Nov 2023</span>
+                    </a>
+                    <a class="cve-row" data-vendor="third-party" data-search="cve-2023-47571 third-party driver vulnerability third-party nov 2023" href="https://www.cve.org/CVERecord?id=CVE-2023-47571" target="_blank" rel="noreferrer">
+                        <span class="cve-row__id">CVE-2023-47571</span>
+                        <span class="cve-row__desc">Third-Party Driver Vulnerability</span>
+                        <span class="cve-row__vendor">Third-Party</span>
+                        <span class="cve-row__date">Nov 2023</span>
+                    </a>
+                    <a class="cve-row" data-vendor="third-party" data-search="cve-2023-47570 jungo driver vulnerability jungo nov 2023" href="https://www.cve.org/CVERecord?id=CVE-2023-47570" target="_blank" rel="noreferrer">
+                        <span class="cve-row__id">CVE-2023-47570</span>
+                        <span class="cve-row__desc">Jungo Driver Vulnerability</span>
+                        <span class="cve-row__vendor">Jungo</span>
+                        <span class="cve-row__date">Nov 2023</span>
+                    </a>
+                    <a class="cve-row" data-vendor="third-party" data-search="cve-2023-47569 third-party driver vulnerability third-party nov 2023" href="https://www.cve.org/CVERecord?id=CVE-2023-47569" target="_blank" rel="noreferrer">
+                        <span class="cve-row__id">CVE-2023-47569</span>
+                        <span class="cve-row__desc">Third-Party Driver Vulnerability</span>
+                        <span class="cve-row__vendor">Third-Party</span>
+                        <span class="cve-row__date">Nov 2023</span>
+                    </a>
+                    <a class="cve-row" data-vendor="third-party" data-search="cve-2023-47450 third-party driver vulnerability third-party nov 2023" href="https://www.cve.org/CVERecord?id=CVE-2023-47450" target="_blank" rel="noreferrer">
+                        <span class="cve-row__id">CVE-2023-47450</span>
+                        <span class="cve-row__desc">Third-Party Driver Vulnerability</span>
+                        <span class="cve-row__vendor">Third-Party</span>
+                        <span class="cve-row__date">Nov 2023</span>
+                    </a>
+                    <a class="cve-row" data-vendor="third-party" data-search="cve-2023-46859 third-party driver vulnerability third-party oct 2023" href="https://www.cve.org/CVERecord?id=CVE-2023-46859" target="_blank" rel="noreferrer">
+                        <span class="cve-row__id">CVE-2023-46859</span>
+                        <span class="cve-row__desc">Third-Party Driver Vulnerability</span>
+                        <span class="cve-row__vendor">Third-Party</span>
+                        <span class="cve-row__date">Oct 2023</span>
+                    </a>
+                    <a class="cve-row" data-vendor="third-party" data-search="cve-2023-46280 third-party driver vulnerability third-party oct 2023" href="https://www.cve.org/CVERecord?id=CVE-2023-46280" target="_blank" rel="noreferrer">
+                        <span class="cve-row__id">CVE-2023-46280</span>
+                        <span class="cve-row__desc">Third-Party Driver Vulnerability</span>
+                        <span class="cve-row__vendor">Third-Party</span>
+                        <span class="cve-row__date">Oct 2023</span>
+                    </a>
+                    <a class="cve-row" data-vendor="apple" data-search="cve-2023-42833 webkit remote code execution vulnerability apple sep 2023" href="https://www.cve.org/CVERecord?id=CVE-2023-42833" target="_blank" rel="noreferrer">
+                        <span class="cve-row__id">CVE-2023-42833</span>
+                        <span class="cve-row__desc">Webkit Remote Code Execution Vulnerability</span>
+                        <span class="cve-row__vendor">Apple</span>
+                        <span class="cve-row__date">Sep 2023</span>
+                    </a>
+                    <a class="cve-row" data-vendor="apple" data-search="cve-2023-35074 webkit remote code execution vulnerability apple sep 2023" href="https://www.cve.org/CVERecord?id=CVE-2023-35074" target="_blank" rel="noreferrer">
+                        <span class="cve-row__id">CVE-2023-35074</span>
+                        <span class="cve-row__desc">Webkit Remote Code Execution Vulnerability</span>
+                        <span class="cve-row__vendor">Apple</span>
+                        <span class="cve-row__date">Sep 2023</span>
+                    </a>
+                    <a class="cve-row" data-vendor="third-party" data-search="cve-2023-31341 third-party driver vulnerability third-party may 2023" href="https://www.cve.org/CVERecord?id=CVE-2023-31341" target="_blank" rel="noreferrer">
+                        <span class="cve-row__id">CVE-2023-31341</span>
+                        <span class="cve-row__desc">Third-Party Driver Vulnerability</span>
+                        <span class="cve-row__vendor">Third-Party</span>
+                        <span class="cve-row__date">May 2023</span>
+                    </a>
+                </section>
+
+                <section class="year" data-year="2022">
+                    <h2 class="year__label">2022 <span class="mono">2</span></h2>
+                    <a class="cve-row" data-vendor="third-party" data-search="cve-2022-2598 third-party driver vulnerability third-party jul 2022" href="https://www.cve.org/CVERecord?id=CVE-2022-2598" target="_blank" rel="noreferrer">
+                        <span class="cve-row__id">CVE-2022-2598</span>
+                        <span class="cve-row__desc">Third-Party Driver Vulnerability</span>
+                        <span class="cve-row__vendor">Third-Party</span>
+                        <span class="cve-row__date">Jul 2022</span>
+                    </a>
+                    <a class="cve-row" data-vendor="third-party" data-search="cve-2022-2549 third-party driver vulnerability third-party jul 2022" href="https://www.cve.org/CVERecord?id=CVE-2022-2549" target="_blank" rel="noreferrer">
+                        <span class="cve-row__id">CVE-2022-2549</span>
+                        <span class="cve-row__desc">Third-Party Driver Vulnerability</span>
+                        <span class="cve-row__vendor">Third-Party</span>
+                        <span class="cve-row__date">Jul 2022</span>
+                    </a>
+                </section>
         </div>
 
-        <!-- Microsoft CVEs -->
-        <div class="vendor-section">
-            <h2 class="section-title" style="font-size: 1.8em; margin-bottom: 30px;"><i class="fab fa-microsoft" style="color: var(--accent-color);"></i>Microsoft Windows</h2>
-            
-            <!-- 2025 CVEs -->
-            <div class="cve-year-section">
-                <h3 class="year-header">2025</h3>
-                <div class="cve-grid">
-                    <div class="cve-item">
-                        <div class="cve-header">
-                            <span class="cve-id">CVE-2025-60717</span>
-                            <span class="cve-date">
-                                Nov 2025
-                                <div class="cve-vendor">Microsoft</div>
-                            </span>
-                        </div>
-                        <div class="cve-description">Windows Broadcast DVR User Service Vulnerability</div>
-                    </div>
-
-                    <div class="cve-item">
-                        <div class="cve-header">
-                            <span class="cve-id">CVE-2025-59515</span>
-                            <span class="cve-date">
-                                Nov 2025
-                                <div class="cve-vendor">Microsoft</div>
-                            </span>
-                        </div>
-                        <div class="cve-description">Windows Broadcast DVR User Service Vulnerability</div>
-                    </div>
-
-                    <div class="cve-item">
-                        <div class="cve-header">
-                            <span class="cve-id">CVE-2025-59210</span>
-                            <span class="cve-date">
-                                Oct 2025
-                                <div class="cve-vendor">Microsoft</div>
-                            </span>
-                        </div>
-                        <div class="cve-description">Windows ReFS Deduplication Service Vulnerability</div>
-                    </div>
-
-                    <div class="cve-item">
-                        <div class="cve-header">
-                            <span class="cve-id">CVE-2025-59198</span>
-                            <span class="cve-date">
-                                Oct 2025
-                                <div class="cve-vendor">Microsoft</div>
-                            </span>
-                        </div>
-                        <div class="cve-description">Windows Search Service Vulnerability</div>
-                    </div>
-
-                    <div class="cve-item">
-                        <div class="cve-header">
-                            <span class="cve-id">CVE-2025-59190</span>
-                            <span class="cve-date">
-                                Oct 2025
-                                <div class="cve-vendor">Microsoft</div>
-                            </span>
-                        </div>
-                        <div class="cve-description">Windows Search Service Vulnerability</div>
-                    </div>
-
-                    <div class="cve-item">
-                        <div class="cve-header">
-                            <span class="cve-id">CVE-2025-55691</span>
-                            <span class="cve-date">
-                                Oct 2025
-                                <div class="cve-vendor">Microsoft</div>
-                            </span>
-                        </div>
-                        <div class="cve-description">Windows PrintWorkflowUserSvc Vulnerability</div>
-                    </div>
-
-                    <div class="cve-item">
-                        <div class="cve-header">
-                            <span class="cve-id">CVE-2025-55690</span>
-                            <span class="cve-date">
-                                Oct 2025
-                                <div class="cve-vendor">Microsoft</div>
-                            </span>
-                        </div>
-                        <div class="cve-description">Windows PrintWorkflowUserSvc Vulnerability</div>
-                    </div>
-
-                    <div class="cve-item">
-                        <div class="cve-header">
-                            <span class="cve-id">CVE-2025-55689</span>
-                            <span class="cve-date">
-                                Oct 2025
-                                <div class="cve-vendor">Microsoft</div>
-                            </span>
-                        </div>
-                        <div class="cve-description">Windows PrintWorkflowUserSvc Vulnerability</div>
-                    </div>
-
-                    <div class="cve-item">
-                        <div class="cve-header">
-                            <span class="cve-id">CVE-2025-55688</span>
-                            <span class="cve-date">
-                                Oct 2025
-                                <div class="cve-vendor">Microsoft</div>
-                            </span>
-                        </div>
-                        <div class="cve-description">Windows PrintWorkflowUserSvc Vulnerability</div>
-                    </div>
-
-                    <div class="cve-item">
-                        <div class="cve-header">
-                            <span class="cve-id">CVE-2025-55686</span>
-                            <span class="cve-date">
-                                Oct 2025
-                                <div class="cve-vendor">Microsoft</div>
-                            </span>
-                        </div>
-                        <div class="cve-description">Windows PrintWorkflowUserSvc Vulnerability</div>
-                    </div>
-
-                    <div class="cve-item">
-                        <div class="cve-header">
-                            <span class="cve-id">CVE-2025-55685</span>
-                            <span class="cve-date">
-                                Oct 2025
-                                <div class="cve-vendor">Microsoft</div>
-                            </span>
-                        </div>
-                        <div class="cve-description">Windows PrintWorkflowUserSvc Vulnerability</div>
-                    </div>
-
-                    <div class="cve-item">
-                        <div class="cve-header">
-                            <span class="cve-id">CVE-2025-55684</span>
-                            <span class="cve-date">
-                                Oct 2025
-                                <div class="cve-vendor">Microsoft</div>
-                            </span>
-                        </div>
-                        <div class="cve-description">Windows PrintWorkflowUserSvc Vulnerability</div>
-                    </div>
-
-                    <div class="cve-item">
-                        <div class="cve-header">
-                            <span class="cve-id">CVE-2025-55677</span>
-                            <span class="cve-date">
-                                Oct 2025
-                                <div class="cve-vendor">Microsoft</div>
-                            </span>
-                        </div>
-                        <div class="cve-description">Windows Device Association Broker Service Vulnerability</div>
-                    </div>
-
-                    <div class="cve-item">
-                        <div class="cve-header">
-                            <span class="cve-id">CVE-2025-53150</span>
-                            <span class="cve-date">
-                                Oct 2025
-                                <div class="cve-vendor">Microsoft</div>
-                            </span>
-                        </div>
-                        <div class="cve-description">Windows Digital Media Service Vulnerability</div>
-                    </div>
-
-                    <div class="cve-item">
-                        <div class="cve-header">
-                            <span class="cve-id">CVE-2025-50174</span>
-                            <span class="cve-date">
-                                Oct 2025
-                                <div class="cve-vendor">Microsoft</div>
-                            </span>
-                        </div>
-                        <div class="cve-description">Windows Device Association Broker Service Vulnerability</div>
-                    </div>
-
-                    <div class="cve-item">
-                        <div class="cve-header">
-                            <span class="cve-id">CVE-2025-59289</span>
-                            <span class="cve-date">
-                                Sep 2025
-                                <div class="cve-vendor">Microsoft</div>
-                            </span>
-                        </div>
-                        <div class="cve-description">Windows Bluetooth Service Vulnerability</div>
-                    </div>
-
-                    <div class="cve-item">
-                        <div class="cve-header">
-                            <span class="cve-id">CVE-2025-59220</span>
-                            <span class="cve-date">
-                                Sep 2025
-                                <div class="cve-vendor">Microsoft</div>
-                            </span>
-                        </div>
-                        <div class="cve-description">Windows Bluetooth Service Vulnerability</div>
-                    </div>
-
-                    <div class="cve-item">
-                        <div class="cve-header">
-                            <span class="cve-id">CVE-2025-53802</span>
-                            <span class="cve-date">
-                                Sep 2025
-                                <div class="cve-vendor">Microsoft</div>
-                            </span>
-                        </div>
-                        <div class="cve-description">Windows Bluetooth Service Vulnerability</div>
-                    </div>
-
-                    <div class="cve-item">
-                        <div class="cve-header">
-                            <span class="cve-id">CVE-2025-53133</span>
-                            <span class="cve-date">
-                                Aug 2025
-                                <div class="cve-vendor">Microsoft</div>
-                            </span>
-                        </div>
-                        <div class="cve-description">Windows PrintWorkflowUserSvc Vulnerability</div>
-                    </div>
-
-                    <div class="cve-item">
-                        <div class="cve-header">
-                            <span class="cve-id">CVE-2025-49664</span>
-                            <span class="cve-date">
-                                Jul 2025
-                                <div class="cve-vendor">Microsoft</div>
-                            </span>
-                        </div>
-                        <div class="cve-description">Windows User-Mode Driver Framework Host Vulnerability</div>
-                    </div>
-
-                    <div class="cve-item">
-                        <div class="cve-header">
-                            <span class="cve-id">CVE-2025-29838</span>
-                            <span class="cve-date">
-                                May 2025
-                                <div class="cve-vendor">Microsoft</div>
-                            </span>
-                        </div>
-                        <div class="cve-description">Windows ExecutionContext Driver Vulnerability</div>
-                    </div>
-
-                    <div class="cve-item">
-                        <div class="cve-header">
-                            <span class="cve-id">CVE-2025-27730</span>
-                            <span class="cve-date">
-                                Apr 2025
-                                <div class="cve-vendor">Microsoft</div>
-                            </span>
-                        </div>
-                        <div class="cve-description">Windows Digital Media Service Vulnerability</div>
-                    </div>
-
-                    <div class="cve-item">
-                        <div class="cve-header">
-                            <span class="cve-id">CVE-2025-27476</span>
-                            <span class="cve-date">
-                                Apr 2025
-                                <div class="cve-vendor">Microsoft</div>
-                            </span>
-                        </div>
-                        <div class="cve-description">Windows Digital Media Service Vulnerability</div>
-                    </div>
-
-                    <div class="cve-item">
-                        <div class="cve-header">
-                            <span class="cve-id">CVE-2025-27475</span>
-                            <span class="cve-date">
-                                Apr 2025
-                                <div class="cve-vendor">Microsoft</div>
-                            </span>
-                        </div>
-                        <div class="cve-description">Windows Update Stack Vulnerability</div>
-                    </div>
-
-                    <div class="cve-item">
-                        <div class="cve-header">
-                            <span class="cve-id">CVE-2025-27467</span>
-                            <span class="cve-date">
-                                Apr 2025
-                                <div class="cve-vendor">Microsoft</div>
-                            </span>
-                        </div>
-                        <div class="cve-description">Windows Digital Media Service Vulnerability</div>
-                    </div>
-
-                    <div class="cve-item">
-                        <div class="cve-header">
-                            <span class="cve-id">CVE-2025-26688</span>
-                            <span class="cve-date">
-                                Apr 2025
-                                <div class="cve-vendor">Microsoft</div>
-                            </span>
-                        </div>
-                        <div class="cve-description">Microsoft Virtual Hard Disk Vulnerability</div>
-                    </div>
-
-                    <div class="cve-item">
-                        <div class="cve-header">
-                            <span class="cve-id">CVE-2025-21183</span>
-                            <span class="cve-date">
-                                Feb 2025
-                                <div class="cve-vendor">Microsoft</div>
-                            </span>
-                        </div>
-                        <div class="cve-description">Windows ReFS Deduplication Service Vulnerability</div>
-                    </div>
-
-                    <div class="cve-item">
-                        <div class="cve-header">
-                            <span class="cve-id">CVE-2025-21182</span>
-                            <span class="cve-date">
-                                Feb 2025
-                                <div class="cve-vendor">Microsoft</div>
-                            </span>
-                        </div>
-                        <div class="cve-description">Windows ReFS Deduplication Service Vulnerability</div>
-                    </div>
-
-                    <div class="cve-item">
-                        <div class="cve-header">
-                            <span class="cve-id">CVE-2025-21235</span>
-                            <span class="cve-date">
-                                Jan 2025
-                                <div class="cve-vendor">Microsoft</div>
-                            </span>
-                        </div>
-                        <div class="cve-description">Windows PrintWorkflowUserSvc Vulnerability</div>
-                    </div>
-
-                    <div class="cve-item">
-                        <div class="cve-header">
-                            <span class="cve-id">CVE-2025-21234</span>
-                            <span class="cve-date">
-                                Jan 2025
-                                <div class="cve-vendor">Microsoft</div>
-                            </span>
-                        </div>
-                        <div class="cve-description">Windows PrintWorkflowUserSvc Vulnerability</div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- 2024 CVEs -->
-            <div class="cve-year-section">
-                <h3 class="year-header">2024</h3>
-                <div class="cve-grid">
-                    <div class="cve-item">
-                        <div class="cve-header">
-                            <span class="cve-id">CVE-2024-49097</span>
-                            <span class="cve-date">
-                                Dec 2024
-                                <div class="cve-vendor">Microsoft</div>
-                            </span>
-                        </div>
-                        <div class="cve-description">Windows PrintWorkflowUserSvc Vulnerability</div>
-                    </div>
-
-                    <div class="cve-item">
-                        <div class="cve-header">
-                            <span class="cve-id">CVE-2024-49095</span>
-                            <span class="cve-date">
-                                Dec 2024
-                                <div class="cve-vendor">Microsoft</div>
-                            </span>
-                        </div>
-                        <div class="cve-description">Windows PrintWorkflowUserSvc Vulnerability</div>
-                    </div>
-
-                    <div class="cve-item">
-                        <div class="cve-header">
-                            <span class="cve-id">CVE-2024-43624</span>
-                            <span class="cve-date">
-                                Nov 2024
-                                <div class="cve-vendor">Microsoft</div>
-                            </span>
-                        </div>
-                        <div class="cve-description">Windows Hyper-V Shared Virtual Disk Vulnerability</div>
-                    </div>
-
-                    <div class="cve-item">
-                        <div class="cve-header">
-                            <span class="cve-id">CVE-2024-38155</span>
-                            <span class="cve-date">
-                                Aug 2024
-                                <div class="cve-vendor">Microsoft</div>
-                            </span>
-                        </div>
-                        <div class="cve-description">Security Center Broker Vulnerability</div>
-                    </div>
-
-                    <div class="cve-item">
-                        <div class="cve-header">
-                            <span class="cve-id">CVE-2024-21445</span>
-                            <span class="cve-date">
-                                Mar 2024
-                                <div class="cve-vendor">Microsoft</div>
-                            </span>
-                        </div>
-                        <div class="cve-description">Windows USB Print Driver Vulnerability</div>
-                    </div>
-
-                    <div class="cve-item">
-                        <div class="cve-header">
-                            <span class="cve-id">CVE-2024-21442</span>
-                            <span class="cve-date">
-                                Mar 2024
-                                <div class="cve-vendor">Microsoft</div>
-                            </span>
-                        </div>
-                        <div class="cve-description">Windows USB Print Driver Vulnerability</div>
-                    </div>
-
-                    <div class="cve-item">
-                        <div class="cve-header">
-                            <span class="cve-id">CVE-2024-20653</span>
-                            <span class="cve-date">
-                                Jan 2024
-                                <div class="cve-vendor">Microsoft</div>
-                            </span>
-                        </div>
-                        <div class="cve-description">Microsoft Common Log File System Vulnerability</div>
-                    </div>
-                </div>
-            </div>
+        <div class="empty" id="cve-empty" hidden>
+            <b>No matching CVEs</b>
+            <span>Try a different product name, vendor, or year.</span>
         </div>
+    </main>
 
-        <!-- Apple CVEs -->
-        <div class="vendor-section">
-            <h2 class="section-title" style="font-size: 1.8em; margin-bottom: 30px;"><i class="fab fa-apple" style="color: var(--accent-color);"></i>Apple</h2>
-            
-            <div class="cve-year-section">
-                <h3 class="year-header">2023</h3>
-                <div class="cve-grid">
-                    <div class="cve-item">
-                        <div class="cve-header">
-                            <span class="cve-id">CVE-2023-42833</span>
-                            <span class="cve-date">
-                                Sep 2023
-                                <div class="cve-vendor">Apple</div>
-                            </span>
-                        </div>
-                        <div class="cve-description">Webkit Remote Code Execution Vulnerability</div>
-                    </div>
-
-                    <div class="cve-item">
-                        <div class="cve-header">
-                            <span class="cve-id">CVE-2023-35074</span>
-                            <span class="cve-date">
-                                Sep 2023
-                                <div class="cve-vendor">Apple</div>
-                            </span>
-                        </div>
-                        <div class="cve-description">Webkit Remote Code Execution Vulnerability</div>
-                    </div>
-                </div>
-            </div>
+    <footer class="footer">
+        <div class="wrap wrap--wide footer__inner">
+            <span>© 2026 Jongseong Kim</span>
+            <a href="../index.html">← back</a>
         </div>
-
-        <!-- Third-Party CVEs -->
-        <div class="vendor-section">
-            <h2 class="section-title" style="font-size: 1.8em; margin-bottom: 30px;"><i class="fas fa-cube" style="color: var(--accent-color);"></i>Third-Party Vendors</h2>
-            <p style="color: var(--text-muted); margin-bottom: 20px; font-size: 0.95em;">
-                Driver vulnerabilities in Mitsubishi, MSI, AMD, SIEMENS, and other third-party vendors.
-            </p>
-            
-            <div class="cve-year-section">
-                <h3 class="year-header">2025</h3>
-                <div class="cve-grid">
-                    <div class="cve-item">
-                        <div class="cve-header">
-                            <span class="cve-id">CVE-2025-48071</span>
-                            <span class="cve-date">
-                                Apr 2025
-                                <div class="cve-vendor">Third-Party</div>
-                            </span>
-                        </div>
-                        <div class="cve-description">Third-Party Driver Vulnerability</div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="cve-year-section">
-                <h3 class="year-header">2024</h3>
-                <div class="cve-grid">
-                    <div class="cve-item">
-                        <div class="cve-header">
-                            <span class="cve-id">CVE-2024-26314</span>
-                            <span class="cve-date">
-                                Apr 2024
-                                <div class="cve-vendor">Third-Party</div>
-                            </span>
-                        </div>
-                        <div class="cve-description">Third-Party Driver Vulnerability</div>
-                    </div>
-
-                    <div class="cve-item">
-                        <div class="cve-header">
-                            <span class="cve-id">CVE-2024-25088</span>
-                            <span class="cve-date">
-                                Mar 2024
-                                <div class="cve-vendor">Third-Party</div>
-                            </span>
-                        </div>
-                        <div class="cve-description">Third-Party Driver Vulnerability</div>
-                    </div>
-
-                    <div class="cve-item">
-                        <div class="cve-header">
-                            <span class="cve-id">CVE-2024-25087</span>
-                            <span class="cve-date">
-                                Mar 2024
-                                <div class="cve-vendor">Third-Party</div>
-                            </span>
-                        </div>
-                        <div class="cve-description">Third-Party Driver Vulnerability</div>
-                    </div>
-
-                    <div class="cve-item">
-                        <div class="cve-header">
-                            <span class="cve-id">CVE-2024-25086</span>
-                            <span class="cve-date">
-                                Mar 2024
-                                <div class="cve-vendor">Third-Party</div>
-                            </span>
-                        </div>
-                        <div class="cve-description">Third-Party Driver Vulnerability</div>
-                    </div>
-
-                    <div class="cve-item">
-                        <div class="cve-header">
-                            <span class="cve-id">CVE-2024-22106</span>
-                            <span class="cve-date">
-                                Mar 2024
-                                <div class="cve-vendor">Third-Party</div>
-                            </span>
-                        </div>
-                        <div class="cve-description">Third-Party Driver Vulnerability</div>
-                    </div>
-
-                    <div class="cve-item">
-                        <div class="cve-header">
-                            <span class="cve-id">CVE-2024-22105</span>
-                            <span class="cve-date">
-                                Mar 2024
-                                <div class="cve-vendor">Third-Party</div>
-                            </span>
-                        </div>
-                        <div class="cve-description">Third-Party Driver Vulnerability</div>
-                    </div>
-
-                    <div class="cve-item">
-                        <div class="cve-header">
-                            <span class="cve-id">CVE-2024-22104</span>
-                            <span class="cve-date">
-                                Mar 2024
-                                <div class="cve-vendor">Third-Party</div>
-                            </span>
-                        </div>
-                        <div class="cve-description">Third-Party Driver Vulnerability</div>
-                    </div>
-
-                    <div class="cve-item">
-                        <div class="cve-header">
-                            <span class="cve-id">CVE-2024-22103</span>
-                            <span class="cve-date">
-                                Mar 2024
-                                <div class="cve-vendor">Third-Party</div>
-                            </span>
-                        </div>
-                        <div class="cve-description">Third-Party Driver Vulnerability</div>
-                    </div>
-
-                    <div class="cve-item">
-                        <div class="cve-header">
-                            <span class="cve-id">CVE-2024-22102</span>
-                            <span class="cve-date">
-                                Mar 2024
-                                <div class="cve-vendor">Third-Party</div>
-                            </span>
-                        </div>
-                        <div class="cve-description">Third-Party Driver Vulnerability</div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="cve-year-section">
-                <h3 class="year-header">2023</h3>
-                <div class="cve-grid">
-                    <div class="cve-item">
-                        <div class="cve-header">
-                            <span class="cve-id">CVE-2023-51778</span>
-                            <span class="cve-date">
-                                Dec 2023
-                                <div class="cve-vendor">Third-Party</div>
-                            </span>
-                        </div>
-                        <div class="cve-description">Third-Party Driver Vulnerability</div>
-                    </div>
-
-                    <div class="cve-item">
-                        <div class="cve-header">
-                            <span class="cve-id">CVE-2023-51777</span>
-                            <span class="cve-date">
-                                Dec 2023
-                                <div class="cve-vendor">Third-Party</div>
-                            </span>
-                        </div>
-                        <div class="cve-description">Third-Party Driver Vulnerability</div>
-                    </div>
-
-                    <div class="cve-item">
-                        <div class="cve-header">
-                            <span class="cve-id">CVE-2023-51776</span>
-                            <span class="cve-date">
-                                Dec 2023
-                                <div class="cve-vendor">Third-Party</div>
-                            </span>
-                        </div>
-                        <div class="cve-description">Third-Party Driver Vulnerability</div>
-                    </div>
-
-                    <div class="cve-item">
-                        <div class="cve-header">
-                            <span class="cve-id">CVE-2023-47572</span>
-                            <span class="cve-date">
-                                Nov 2023
-                                <div class="cve-vendor">Third-Party</div>
-                            </span>
-                        </div>
-                        <div class="cve-description">Third-Party Driver Vulnerability</div>
-                    </div>
-
-                    <div class="cve-item">
-                        <div class="cve-header">
-                            <span class="cve-id">CVE-2023-47571</span>
-                            <span class="cve-date">
-                                Nov 2023
-                                <div class="cve-vendor">Third-Party</div>
-                            </span>
-                        </div>
-                        <div class="cve-description">Third-Party Driver Vulnerability</div>
-                    </div>
-
-                    <div class="cve-item">
-                        <div class="cve-header">
-                            <span class="cve-id">CVE-2023-47569</span>
-                            <span class="cve-date">
-                                Nov 2023
-                                <div class="cve-vendor">Third-Party</div>
-                            </span>
-                        </div>
-                        <div class="cve-description">Third-Party Driver Vulnerability</div>
-                    </div>
-
-                    <div class="cve-item">
-                        <div class="cve-header">
-                            <span class="cve-id">CVE-2023-47450</span>
-                            <span class="cve-date">
-                                Nov 2023
-                                <div class="cve-vendor">Third-Party</div>
-                            </span>
-                        </div>
-                        <div class="cve-description">Third-Party Driver Vulnerability</div>
-                    </div>
-
-                    <div class="cve-item">
-                        <div class="cve-header">
-                            <span class="cve-id">CVE-2023-46859</span>
-                            <span class="cve-date">
-                                Oct 2023
-                                <div class="cve-vendor">Third-Party</div>
-                            </span>
-                        </div>
-                        <div class="cve-description">Third-Party Driver Vulnerability</div>
-                    </div>
-
-                    <div class="cve-item">
-                        <div class="cve-header">
-                            <span class="cve-id">CVE-2023-46280</span>
-                            <span class="cve-date">
-                                Oct 2023
-                                <div class="cve-vendor">Third-Party</div>
-                            </span>
-                        </div>
-                        <div class="cve-description">Third-Party Driver Vulnerability</div>
-                    </div>
-
-                    <div class="cve-item">
-                        <div class="cve-header">
-                            <span class="cve-id">CVE-2023-31341</span>
-                            <span class="cve-date">
-                                May 2023
-                                <div class="cve-vendor">Third-Party</div>
-                            </span>
-                        </div>
-                        <div class="cve-description">Third-Party Driver Vulnerability</div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="cve-year-section">
-                <h3 class="year-header">2022</h3>
-                <div class="cve-grid">
-                    <div class="cve-item">
-                        <div class="cve-header">
-                            <span class="cve-id">CVE-2022-2598</span>
-                            <span class="cve-date">
-                                Jul 2022
-                                <div class="cve-vendor">Third-Party</div>
-                            </span>
-                        </div>
-                        <div class="cve-description">Third-Party Driver Vulnerability</div>
-                    </div>
-
-                    <div class="cve-item">
-                        <div class="cve-header">
-                            <span class="cve-id">CVE-2022-2549</span>
-                            <span class="cve-date">
-                                Jul 2022
-                                <div class="cve-vendor">Third-Party</div>
-                            </span>
-                        </div>
-                        <div class="cve-description">Third-Party Driver Vulnerability</div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <footer>
-            <p>© 2025 Jongseong Kim (@nevul37)</p>
-            <p style="margin-top: 10px; font-size: 0.85em;">
-                <a href="index.html" style="color: var(--accent-color); text-decoration: none;">← Back to Home</a>
-            </p>
         </footer>
-    </div>
+
+    <script>
+        (function () {
+            const search = document.getElementById('cve-search');
+            const chips = Array.from(document.querySelectorAll('.chip'));
+            const years = Array.from(document.querySelectorAll('.year'));
+            const rows = Array.from(document.querySelectorAll('.cve-row'));
+            const count = document.getElementById('cve-count');
+            const empty = document.getElementById('cve-empty');
+            const total = rows.length;
+            let vendor = 'all';
+
+            function apply() {
+                const query = search.value.trim().toLowerCase();
+                let visible = 0;
+
+                rows.forEach(function (row) {
+                    const match = (vendor === 'all' || row.dataset.vendor === vendor) &&
+                        (query === '' || row.dataset.search.includes(query));
+                    row.hidden = !match;
+                    if (match) { visible += 1; }
+                });
+
+                years.forEach(function (year) {
+                    year.hidden = !year.querySelector('.cve-row:not([hidden])');
+                });
+
+                count.textContent = visible + ' / ' + total;
+                empty.hidden = visible !== 0;
+            }
+
+            chips.forEach(function (chip) {
+                chip.addEventListener('click', function () {
+                    vendor = chip.dataset.vendor;
+                    chips.forEach(function (other) {
+                        other.setAttribute('aria-pressed', String(other === chip));
+                    });
+                    apply();
+                });
+            });
+
+            search.addEventListener('input', apply);
+        })();
+    </script>
 </body>
 </html>
-
-
