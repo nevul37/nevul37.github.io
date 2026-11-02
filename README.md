@@ -2,6 +2,10 @@
 
 Personal site, served by GitHub Pages from `main`. Plain HTML and CSS, no build step.
 
+When you edit `css/styles.css`, bump the `?v=` on its `<link>` in `index.html`,
+`pages/more-cves.html`, and `404.html`. GitHub Pages caches files for ten minutes, so without
+the bump a visitor can get new HTML with the old stylesheet.
+
 ## Updating the CVE list
 
 The CVE archive (`pages/more-cves.html`) and the CVE counts on the home page are generated
