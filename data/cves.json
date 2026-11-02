@@ -1,0 +1,936 @@
+{
+  "exclude": [],
+  "cves": [
+    {
+      "id": "CVE-2026-109453",
+      "title": "Virtual Hard Disk (VHD) Miniport Driver Elevation of Privilege Vulnerability",
+      "vendor": "Microsoft",
+      "date": "2026-10",
+      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-109453"
+    },
+    {
+      "id": "CVE-2026-103555",
+      "title": "Virtual Hard Disk (VHD) Miniport Driver Elevation of Privilege Vulnerability",
+      "vendor": "Microsoft",
+      "date": "2026-10",
+      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-103555"
+    },
+    {
+      "id": "CVE-2026-102225",
+      "title": "Windows Text Shaping Remote Code Execution Vulnerability",
+      "vendor": "Microsoft",
+      "date": "2026-10",
+      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-102225"
+    },
+    {
+      "id": "CVE-2026-102205",
+      "title": "Windows Universal Disk Format File System Driver (UDFS) Elevation of Privilege Vulnerability",
+      "vendor": "Microsoft",
+      "date": "2026-10",
+      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-102205"
+    },
+    {
+      "id": "CVE-2026-100211",
+      "title": "Microsoft Office Excel Remote Code Execution Vulnerability",
+      "vendor": "Microsoft",
+      "date": "2026-10",
+      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-100211"
+    },
+    {
+      "id": "CVE-2026-100209",
+      "title": "Microsoft Office Excel Remote Code Execution Vulnerability",
+      "vendor": "Microsoft",
+      "date": "2026-10",
+      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-100209"
+    },
+    {
+      "id": "CVE-2026-97814",
+      "title": "Windows Text Shaping Remote Code Execution Vulnerability",
+      "vendor": "Microsoft",
+      "date": "2026-10",
+      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-97814"
+    },
+    {
+      "id": "CVE-2026-97794",
+      "title": "Windows Container Isolation FS Filter Driver (unionfs.sys) Elevation of Privilege Vulnerability",
+      "vendor": "Microsoft",
+      "date": "2026-10",
+      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-97794"
+    },
+    {
+      "id": "CVE-2026-97768",
+      "title": "Microsoft Office Excel Remote Code Execution Vulnerability",
+      "vendor": "Microsoft",
+      "date": "2026-10",
+      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-97768"
+    },
+    {
+      "id": "CVE-2026-97761",
+      "title": "Microsoft Office Excel Remote Code Execution Vulnerability",
+      "vendor": "Microsoft",
+      "date": "2026-10",
+      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-97761"
+    },
+    {
+      "id": "CVE-2026-97760",
+      "title": "Microsoft Office Excel Information Disclosure Vulnerability",
+      "vendor": "Microsoft",
+      "date": "2026-10",
+      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-97760"
+    },
+    {
+      "id": "CVE-2026-97750",
+      "title": "Microsoft Office Excel Remote Code Execution Vulnerability",
+      "vendor": "Microsoft",
+      "date": "2026-10",
+      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-97750"
+    },
+    {
+      "id": "CVE-2026-97743",
+      "title": "Microsoft Office Excel Information Disclosure Vulnerability",
+      "vendor": "Microsoft",
+      "date": "2026-10",
+      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-97743"
+    },
+    {
+      "id": "CVE-2026-97740",
+      "title": "Microsoft Office Excel Information Disclosure Vulnerability",
+      "vendor": "Microsoft",
+      "date": "2026-10",
+      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-97740"
+    },
+    {
+      "id": "CVE-2026-97011",
+      "title": "Microsoft Office Excel Remote Code Execution Vulnerability",
+      "vendor": "Microsoft",
+      "date": "2026-10",
+      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-97011"
+    },
+    {
+      "id": "CVE-2026-96949",
+      "title": "Windows Universal Disk Format File System Driver (UDFS) Elevation of Privilege Vulnerability",
+      "vendor": "Microsoft",
+      "date": "2026-10",
+      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-96949"
+    },
+    {
+      "id": "CVE-2026-96947",
+      "title": "Windows Universal Disk Format File System Driver (UDFS) Elevation of Privilege Vulnerability",
+      "vendor": "Microsoft",
+      "date": "2026-10",
+      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-96947"
+    },
+    {
+      "id": "CVE-2026-96946",
+      "title": "Windows Universal Disk Format File System Driver (UDFS) Elevation of Privilege Vulnerability",
+      "vendor": "Microsoft",
+      "date": "2026-10",
+      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-96946"
+    },
+    {
+      "id": "CVE-2026-96912",
+      "title": "Windows Client License Service Elevation of Privilege Vulnerability",
+      "vendor": "Microsoft",
+      "date": "2026-10",
+      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-96912"
+    },
+    {
+      "id": "CVE-2026-96185",
+      "title": "Microsoft Exchange Online Remote Code Execution Vulnerability",
+      "vendor": "Microsoft",
+      "date": "2026-10",
+      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-96185"
+    },
+    {
+      "id": "CVE-2026-85372",
+      "title": "Windows Kernel Elevation of Privilege Vulnerability",
+      "vendor": "Microsoft",
+      "date": "2026-10",
+      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-85372"
+    },
+    {
+      "id": "CVE-2026-84018",
+      "title": "Windows Print Spooler Components Elevation of Privilege Vulnerability",
+      "vendor": "Microsoft",
+      "date": "2026-10",
+      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-84018"
+    },
+    {
+      "id": "CVE-2026-83886",
+      "title": "Windows Update Orchestrator Service Elevation of Privilege Vulnerability",
+      "vendor": "Microsoft",
+      "date": "2026-10",
+      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-83886"
+    },
+    {
+      "id": "CVE-2026-70263",
+      "title": "Microsoft Office Word Information Disclosure Vulnerability",
+      "vendor": "Microsoft",
+      "date": "2026-10",
+      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-70263"
+    },
+    {
+      "id": "CVE-2026-70217",
+      "title": "Microsoft Office SharePoint Information Disclosure Vulnerability",
+      "vendor": "Microsoft",
+      "date": "2026-10",
+      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-70217"
+    },
+    {
+      "id": "CVE-2026-69915",
+      "title": "Windows NTFS Elevation of Privilege Vulnerability",
+      "vendor": "Microsoft",
+      "date": "2026-10",
+      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-69915"
+    },
+    {
+      "id": "CVE-2026-77504",
+      "title": "Microsoft Office Word Remote Code Execution Vulnerability",
+      "vendor": "Microsoft",
+      "date": "2026-09",
+      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-77504"
+    },
+    {
+      "id": "CVE-2026-69904",
+      "title": "Microsoft Office SharePoint Information Disclosure Vulnerability",
+      "vendor": "Microsoft",
+      "date": "2026-09",
+      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-69904"
+    },
+    {
+      "id": "CVE-2026-69690",
+      "title": "Microsoft Office SharePoint Spoofing Vulnerability",
+      "vendor": "Microsoft",
+      "date": "2026-09",
+      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-69690"
+    },
+    {
+      "id": "CVE-2026-69605",
+      "title": "Microsoft Install Service Elevation of Privilege Vulnerability",
+      "vendor": "Microsoft",
+      "date": "2026-09",
+      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-69605"
+    },
+    {
+      "id": "CVE-2026-69417",
+      "title": "Microsoft Office SharePoint Spoofing Vulnerability",
+      "vendor": "Microsoft",
+      "date": "2026-09",
+      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-69417"
+    },
+    {
+      "id": "CVE-2026-69406",
+      "title": "Windows Kernel Information Disclosure Vulnerability",
+      "vendor": "Microsoft",
+      "date": "2026-09",
+      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-69406"
+    },
+    {
+      "id": "CVE-2026-69380",
+      "title": "Microsoft Exchange Server Elevation of Privilege Vulnerability",
+      "vendor": "Microsoft",
+      "date": "2026-09",
+      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-69380"
+    },
+    {
+      "id": "CVE-2026-69360",
+      "title": "Microsoft Office Word Remote Code Execution Vulnerability",
+      "vendor": "Microsoft",
+      "date": "2026-09",
+      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-69360"
+    },
+    {
+      "id": "CVE-2026-69282",
+      "title": "Microsoft Office SharePoint Remote Code Execution Vulnerability",
+      "vendor": "Microsoft",
+      "date": "2026-09",
+      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-69282"
+    },
+    {
+      "id": "CVE-2026-70306",
+      "title": "Microsoft Office SharePoint Spoofing Vulnerability",
+      "vendor": "Microsoft",
+      "date": "2026-08",
+      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-70306"
+    },
+    {
+      "id": "CVE-2026-68807",
+      "title": "Microsoft Excel Remote Code Execution Vulnerability",
+      "vendor": "Microsoft",
+      "date": "2026-08",
+      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-68807"
+    },
+    {
+      "id": "CVE-2026-68804",
+      "title": "Microsoft Excel Remote Code Execution Vulnerability",
+      "vendor": "Microsoft",
+      "date": "2026-08",
+      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-68804"
+    },
+    {
+      "id": "CVE-2026-68798",
+      "title": "Microsoft Excel Remote Code Execution Vulnerability",
+      "vendor": "Microsoft",
+      "date": "2026-08",
+      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-68798"
+    },
+    {
+      "id": "CVE-2026-68795",
+      "title": "Microsoft Excel Remote Code Execution Vulnerability",
+      "vendor": "Microsoft",
+      "date": "2026-08",
+      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-68795"
+    },
+    {
+      "id": "CVE-2026-64916",
+      "title": "Microsoft SharePoint Server Spoofing Vulnerability",
+      "vendor": "Microsoft",
+      "date": "2026-08",
+      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-64916"
+    },
+    {
+      "id": "CVE-2026-64899",
+      "title": "Microsoft Office Information Disclosure Vulnerability",
+      "vendor": "Microsoft",
+      "date": "2026-08",
+      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-64899"
+    },
+    {
+      "id": "CVE-2026-63515",
+      "title": "Microsoft Office Remote Code Execution Vulnerability",
+      "vendor": "Microsoft",
+      "date": "2026-08",
+      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-63515"
+    },
+    {
+      "id": "CVE-2026-63513",
+      "title": "Microsoft Office Graphics Component Remote Code Execution Vulnerability",
+      "vendor": "Microsoft",
+      "date": "2026-08",
+      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-63513"
+    },
+    {
+      "id": "CVE-2026-62741",
+      "title": "Windows HTTP.sys Elevation of Privilege Vulnerability",
+      "vendor": "Microsoft",
+      "date": "2026-08",
+      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-62741"
+    },
+    {
+      "id": "CVE-2026-62735",
+      "title": "Windows HTTP.sys Elevation of Privilege Vulnerability",
+      "vendor": "Microsoft",
+      "date": "2026-08",
+      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-62735"
+    },
+    {
+      "id": "CVE-2026-61937",
+      "title": "Windows HTTP.sys Elevation of Privilege Vulnerability",
+      "vendor": "Microsoft",
+      "date": "2026-08",
+      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-61937"
+    },
+    {
+      "id": "CVE-2026-61366",
+      "title": "Windows Network Connection Broker Elevation of Privilege Vulnerability",
+      "vendor": "Microsoft",
+      "date": "2026-08",
+      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-61366"
+    },
+    {
+      "id": "CVE-2026-61349",
+      "title": "Windows Work Folder Service Elevation of Privilege Vulnerability",
+      "vendor": "Microsoft",
+      "date": "2026-08",
+      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-61349"
+    },
+    {
+      "id": "CVE-2026-50490",
+      "title": "Windows Installer Elevation of Privilege Vulnerability",
+      "vendor": "Microsoft",
+      "date": "2026-07",
+      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-50490"
+    },
+    {
+      "id": "CVE-2026-50476",
+      "title": "Windows Network Connections Service Elevation of Privilege Vulnerability",
+      "vendor": "Microsoft",
+      "date": "2026-07",
+      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-50476"
+    },
+    {
+      "id": "CVE-2026-50384",
+      "title": "Windows Clip Service Elevation of Privilege Vulnerability",
+      "vendor": "Microsoft",
+      "date": "2026-07",
+      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-50384"
+    },
+    {
+      "id": "CVE-2026-50341",
+      "title": "Windows NTFS Information Disclosure Vulnerability",
+      "vendor": "Microsoft",
+      "date": "2026-07",
+      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-50341"
+    },
+    {
+      "id": "CVE-2026-49798",
+      "title": "Windows Kernel Elevation of Privilege Vulnerability",
+      "vendor": "Microsoft",
+      "date": "2026-07",
+      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-49798"
+    },
+    {
+      "id": "CVE-2026-49183",
+      "title": "Windows Clipboard Server Elevation of Privilege Vulnerability",
+      "vendor": "Microsoft",
+      "date": "2026-07",
+      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-49183"
+    },
+    {
+      "id": "CVE-2026-47304",
+      "title": ".NET Security Feature Bypass Vulnerability",
+      "vendor": "Microsoft",
+      "date": "2026-07",
+      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-47304"
+    },
+    {
+      "id": "CVE-2026-43739",
+      "title": "Apple multi-platform security vulnerability affecting iOS, iPadOS, macOS, and visionOS",
+      "vendor": "Apple",
+      "date": "2026-07",
+      "url": "https://support.apple.com/en-us/128066"
+    },
+    {
+      "id": "CVE-2026-45502",
+      "title": "Microsoft Exchange Server Information Disclosure Vulnerability",
+      "vendor": "Microsoft",
+      "date": "2026-06",
+      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-45502"
+    },
+    {
+      "id": "CVE-2026-45501",
+      "title": "Microsoft Exchange Server Spoofing Vulnerability",
+      "vendor": "Microsoft",
+      "date": "2026-06",
+      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-45501"
+    },
+    {
+      "id": "CVE-2026-42984",
+      "title": "Windows Kernel Elevation of Privilege Vulnerability",
+      "vendor": "Microsoft",
+      "date": "2026-06",
+      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-42984"
+    },
+    {
+      "id": "CVE-2026-35420",
+      "title": "Windows Kernel Elevation of Privilege Vulnerability",
+      "vendor": "Microsoft",
+      "date": "2026-05",
+      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-35420"
+    },
+    {
+      "id": "CVE-2026-33840",
+      "title": "Win32k Elevation of Privilege Vulnerability",
+      "vendor": "Microsoft",
+      "date": "2026-05",
+      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-33840"
+    },
+    {
+      "id": "CVE-2026-32223",
+      "title": "Windows USB Printing Stack (usbprint.sys) Elevation of Privilege Vulnerability",
+      "vendor": "Microsoft",
+      "date": "2026-04",
+      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-32223"
+    },
+    {
+      "id": "CVE-2026-32195",
+      "title": "Windows Kernel Elevation of Privilege Vulnerability",
+      "vendor": "Microsoft",
+      "date": "2026-04",
+      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-32195"
+    },
+    {
+      "id": "CVE-2026-27909",
+      "title": "Windows Search Service Elevation of Privilege Vulnerability",
+      "vendor": "Microsoft",
+      "date": "2026-04",
+      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-27909"
+    },
+    {
+      "id": "CVE-2026-23667",
+      "title": "Broadcast DVR Elevation of Privilege Vulnerability",
+      "vendor": "Microsoft",
+      "date": "2026-03",
+      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-23667"
+    },
+    {
+      "id": "CVE-2026-20918",
+      "title": "Windows Management Services Elevation of Privilege Vulnerability",
+      "vendor": "Microsoft",
+      "date": "2026-01",
+      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-20918"
+    },
+    {
+      "id": "CVE-2026-20835",
+      "title": "Capability Access Management Service (camsvc) Information Disclosure Vulnerability",
+      "vendor": "Microsoft",
+      "date": "2026-01",
+      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-20835"
+    },
+    {
+      "id": "CVE-2025-60717",
+      "title": "Windows Broadcast DVR User Service Elevation of Privilege Vulnerability",
+      "vendor": "Microsoft",
+      "date": "2025-11",
+      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-60717"
+    },
+    {
+      "id": "CVE-2025-60703",
+      "title": "Windows Remote Desktop Services Elevation of Privilege Vulnerability",
+      "vendor": "Microsoft",
+      "date": "2025-11",
+      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-60703"
+    },
+    {
+      "id": "CVE-2025-59515",
+      "title": "Windows Broadcast DVR User Service Elevation of Privilege Vulnerability",
+      "vendor": "Microsoft",
+      "date": "2025-11",
+      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-59515"
+    },
+    {
+      "id": "CVE-2025-59210",
+      "title": "Windows Resilient File System (ReFS) Deduplication Service Elevation of Privilege Vulnerability",
+      "vendor": "Microsoft",
+      "date": "2025-10",
+      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-59210"
+    },
+    {
+      "id": "CVE-2025-59198",
+      "title": "Windows Search Service Denial of Service Vulnerability",
+      "vendor": "Microsoft",
+      "date": "2025-10",
+      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-59198"
+    },
+    {
+      "id": "CVE-2025-59190",
+      "title": "Windows Search Service Denial of Service Vulnerability",
+      "vendor": "Microsoft",
+      "date": "2025-10",
+      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-59190"
+    },
+    {
+      "id": "CVE-2025-55691",
+      "title": "Windows PrintWorkflowUserSvc Elevation of Privilege Vulnerability",
+      "vendor": "Microsoft",
+      "date": "2025-10",
+      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-55691"
+    },
+    {
+      "id": "CVE-2025-55690",
+      "title": "Windows PrintWorkflowUserSvc Elevation of Privilege Vulnerability",
+      "vendor": "Microsoft",
+      "date": "2025-10",
+      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-55690"
+    },
+    {
+      "id": "CVE-2025-55689",
+      "title": "Windows PrintWorkflowUserSvc Elevation of Privilege Vulnerability",
+      "vendor": "Microsoft",
+      "date": "2025-10",
+      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-55689"
+    },
+    {
+      "id": "CVE-2025-55688",
+      "title": "Windows PrintWorkflowUserSvc Elevation of Privilege Vulnerability",
+      "vendor": "Microsoft",
+      "date": "2025-10",
+      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-55688"
+    },
+    {
+      "id": "CVE-2025-55686",
+      "title": "Windows PrintWorkflowUserSvc Elevation of Privilege Vulnerability",
+      "vendor": "Microsoft",
+      "date": "2025-10",
+      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-55686"
+    },
+    {
+      "id": "CVE-2025-55685",
+      "title": "Windows PrintWorkflowUserSvc Elevation of Privilege Vulnerability",
+      "vendor": "Microsoft",
+      "date": "2025-10",
+      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-55685"
+    },
+    {
+      "id": "CVE-2025-55684",
+      "title": "Windows PrintWorkflowUserSvc Elevation of Privilege Vulnerability",
+      "vendor": "Microsoft",
+      "date": "2025-10",
+      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-55684"
+    },
+    {
+      "id": "CVE-2025-55677",
+      "title": "Windows Device Association Broker Service Elevation of Privilege Vulnerability",
+      "vendor": "Microsoft",
+      "date": "2025-10",
+      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-55677"
+    },
+    {
+      "id": "CVE-2025-53150",
+      "title": "Windows Digital Media Elevation of Privilege Vulnerability",
+      "vendor": "Microsoft",
+      "date": "2025-10",
+      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-53150"
+    },
+    {
+      "id": "CVE-2025-50174",
+      "title": "Windows Device Association Broker Service Elevation of Privilege Vulnerability",
+      "vendor": "Microsoft",
+      "date": "2025-10",
+      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-50174"
+    },
+    {
+      "id": "CVE-2025-59289",
+      "title": "Windows Bluetooth Service Elevation of Privilege Vulnerability",
+      "vendor": "Microsoft",
+      "date": "2025-09",
+      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-59289"
+    },
+    {
+      "id": "CVE-2025-59220",
+      "title": "Windows Bluetooth Service Elevation of Privilege Vulnerability",
+      "vendor": "Microsoft",
+      "date": "2025-09",
+      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-59220"
+    },
+    {
+      "id": "CVE-2025-53802",
+      "title": "Windows Bluetooth Service Elevation of Privilege Vulnerability",
+      "vendor": "Microsoft",
+      "date": "2025-09",
+      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-53802"
+    },
+    {
+      "id": "CVE-2025-53133",
+      "title": "Windows PrintWorkflowUserSvc Elevation of Privilege Vulnerability",
+      "vendor": "Microsoft",
+      "date": "2025-08",
+      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-53133"
+    },
+    {
+      "id": "CVE-2025-49664",
+      "title": "Windows User-Mode Driver Framework Host Information Disclosure Vulnerability",
+      "vendor": "Microsoft",
+      "date": "2025-07",
+      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-49664"
+    },
+    {
+      "id": "CVE-2025-29838",
+      "title": "Windows ExecutionContext Driver Elevation of Privilege Vulnerability",
+      "vendor": "Microsoft",
+      "date": "2025-05",
+      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-29838"
+    },
+    {
+      "id": "CVE-2025-48071",
+      "title": "Third-Party Driver Vulnerability",
+      "vendor": "Third-Party",
+      "date": "2025-04",
+      "url": "https://www.cve.org/CVERecord?id=CVE-2025-48071"
+    },
+    {
+      "id": "CVE-2025-27730",
+      "title": "Windows Digital Media Elevation of Privilege Vulnerability",
+      "vendor": "Microsoft",
+      "date": "2025-04",
+      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-27730"
+    },
+    {
+      "id": "CVE-2025-27476",
+      "title": "Windows Digital Media Elevation of Privilege Vulnerability",
+      "vendor": "Microsoft",
+      "date": "2025-04",
+      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-27476"
+    },
+    {
+      "id": "CVE-2025-27475",
+      "title": "Windows Update Stack Elevation of Privilege Vulnerability",
+      "vendor": "Microsoft",
+      "date": "2025-04",
+      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-27475"
+    },
+    {
+      "id": "CVE-2025-27467",
+      "title": "Windows Digital Media Elevation of Privilege Vulnerability",
+      "vendor": "Microsoft",
+      "date": "2025-04",
+      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-27467"
+    },
+    {
+      "id": "CVE-2025-26688",
+      "title": "Microsoft Virtual Hard Disk Elevation of Privilege Vulnerability",
+      "vendor": "Microsoft",
+      "date": "2025-04",
+      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-26688"
+    },
+    {
+      "id": "CVE-2025-21183",
+      "title": "Windows Resilient File System (ReFS) Deduplication Service Elevation of Privilege Vulnerability",
+      "vendor": "Microsoft",
+      "date": "2025-02",
+      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-21183"
+    },
+    {
+      "id": "CVE-2025-21182",
+      "title": "Windows Resilient File System (ReFS) Deduplication Service Elevation of Privilege Vulnerability",
+      "vendor": "Microsoft",
+      "date": "2025-02",
+      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-21182"
+    },
+    {
+      "id": "CVE-2025-21235",
+      "title": "Windows PrintWorkflowUserSvc Elevation of Privilege Vulnerability",
+      "vendor": "Microsoft",
+      "date": "2025-01",
+      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-21235"
+    },
+    {
+      "id": "CVE-2025-21234",
+      "title": "Windows PrintWorkflowUserSvc Elevation of Privilege Vulnerability",
+      "vendor": "Microsoft",
+      "date": "2025-01",
+      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-21234"
+    },
+    {
+      "id": "CVE-2024-49097",
+      "title": "Windows PrintWorkflowUserSvc Elevation of Privilege Vulnerability",
+      "vendor": "Microsoft",
+      "date": "2024-12",
+      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2024-49097"
+    },
+    {
+      "id": "CVE-2024-49095",
+      "title": "Windows PrintWorkflowUserSvc Elevation of Privilege Vulnerability",
+      "vendor": "Microsoft",
+      "date": "2024-12",
+      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2024-49095"
+    },
+    {
+      "id": "CVE-2024-43624",
+      "title": "Windows Hyper-V Shared Virtual Disk Elevation of Privilege Vulnerability",
+      "vendor": "Microsoft",
+      "date": "2024-11",
+      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2024-43624"
+    },
+    {
+      "id": "CVE-2024-45182",
+      "title": "WibuKey Driver Out-of-Bounds Read Vulnerability",
+      "vendor": "WIBU-SYSTEMS",
+      "date": "2024-09",
+      "url": "https://www.cve.org/CVERecord?id=CVE-2024-45182"
+    },
+    {
+      "id": "CVE-2024-45181",
+      "title": "WibuKey Driver Arbitrary Address Write Vulnerability",
+      "vendor": "WIBU-SYSTEMS",
+      "date": "2024-09",
+      "url": "https://www.cve.org/CVERecord?id=CVE-2024-45181"
+    },
+    {
+      "id": "CVE-2024-38155",
+      "title": "Security Center Broker Information Disclosure Vulnerability",
+      "vendor": "Microsoft",
+      "date": "2024-08",
+      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2024-38155"
+    },
+    {
+      "id": "CVE-2024-26314",
+      "title": "Third-Party Driver Vulnerability",
+      "vendor": "Third-Party",
+      "date": "2024-04",
+      "url": "https://www.cve.org/CVERecord?id=CVE-2024-26314"
+    },
+    {
+      "id": "CVE-2024-25088",
+      "title": "Third-Party Driver Vulnerability",
+      "vendor": "Third-Party",
+      "date": "2024-03",
+      "url": "https://www.cve.org/CVERecord?id=CVE-2024-25088"
+    },
+    {
+      "id": "CVE-2024-25087",
+      "title": "Third-Party Driver Vulnerability",
+      "vendor": "Third-Party",
+      "date": "2024-03",
+      "url": "https://www.cve.org/CVERecord?id=CVE-2024-25087"
+    },
+    {
+      "id": "CVE-2024-25086",
+      "title": "Third-Party Driver Vulnerability",
+      "vendor": "Third-Party",
+      "date": "2024-03",
+      "url": "https://www.cve.org/CVERecord?id=CVE-2024-25086"
+    },
+    {
+      "id": "CVE-2024-22106",
+      "title": "Third-Party Driver Vulnerability",
+      "vendor": "Third-Party",
+      "date": "2024-03",
+      "url": "https://www.cve.org/CVERecord?id=CVE-2024-22106"
+    },
+    {
+      "id": "CVE-2024-22105",
+      "title": "Third-Party Driver Vulnerability",
+      "vendor": "Third-Party",
+      "date": "2024-03",
+      "url": "https://www.cve.org/CVERecord?id=CVE-2024-22105"
+    },
+    {
+      "id": "CVE-2024-22104",
+      "title": "Third-Party Driver Vulnerability",
+      "vendor": "Third-Party",
+      "date": "2024-03",
+      "url": "https://www.cve.org/CVERecord?id=CVE-2024-22104"
+    },
+    {
+      "id": "CVE-2024-22103",
+      "title": "Third-Party Driver Vulnerability",
+      "vendor": "Third-Party",
+      "date": "2024-03",
+      "url": "https://www.cve.org/CVERecord?id=CVE-2024-22103"
+    },
+    {
+      "id": "CVE-2024-22102",
+      "title": "Third-Party Driver Vulnerability",
+      "vendor": "Third-Party",
+      "date": "2024-03",
+      "url": "https://www.cve.org/CVERecord?id=CVE-2024-22102"
+    },
+    {
+      "id": "CVE-2024-21445",
+      "title": "Windows USB Print Driver Elevation of Privilege Vulnerability",
+      "vendor": "Microsoft",
+      "date": "2024-03",
+      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2024-21445"
+    },
+    {
+      "id": "CVE-2024-21442",
+      "title": "Windows USB Print Driver Elevation of Privilege Vulnerability",
+      "vendor": "Microsoft",
+      "date": "2024-03",
+      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2024-21442"
+    },
+    {
+      "id": "CVE-2024-20653",
+      "title": "Microsoft Common Log File System Elevation of Privilege Vulnerability",
+      "vendor": "Microsoft",
+      "date": "2024-01",
+      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2024-20653"
+    },
+    {
+      "id": "CVE-2023-51778",
+      "title": "Third-Party Driver Vulnerability",
+      "vendor": "Third-Party",
+      "date": "2023-12",
+      "url": "https://www.cve.org/CVERecord?id=CVE-2023-51778"
+    },
+    {
+      "id": "CVE-2023-51777",
+      "title": "Third-Party Driver Vulnerability",
+      "vendor": "Third-Party",
+      "date": "2023-12",
+      "url": "https://www.cve.org/CVERecord?id=CVE-2023-51777"
+    },
+    {
+      "id": "CVE-2023-51776",
+      "title": "Third-Party Driver Vulnerability",
+      "vendor": "Third-Party",
+      "date": "2023-12",
+      "url": "https://www.cve.org/CVERecord?id=CVE-2023-51776"
+    },
+    {
+      "id": "CVE-2023-47572",
+      "title": "Third-Party Driver Vulnerability",
+      "vendor": "Third-Party",
+      "date": "2023-11",
+      "url": "https://www.cve.org/CVERecord?id=CVE-2023-47572"
+    },
+    {
+      "id": "CVE-2023-47571",
+      "title": "Third-Party Driver Vulnerability",
+      "vendor": "Third-Party",
+      "date": "2023-11",
+      "url": "https://www.cve.org/CVERecord?id=CVE-2023-47571"
+    },
+    {
+      "id": "CVE-2023-47570",
+      "title": "Jungo Driver Vulnerability",
+      "vendor": "Jungo",
+      "date": "2023-11",
+      "url": "https://www.cve.org/CVERecord?id=CVE-2023-47570"
+    },
+    {
+      "id": "CVE-2023-47569",
+      "title": "Third-Party Driver Vulnerability",
+      "vendor": "Third-Party",
+      "date": "2023-11",
+      "url": "https://www.cve.org/CVERecord?id=CVE-2023-47569"
+    },
+    {
+      "id": "CVE-2023-47450",
+      "title": "Third-Party Driver Vulnerability",
+      "vendor": "Third-Party",
+      "date": "2023-11",
+      "url": "https://www.cve.org/CVERecord?id=CVE-2023-47450"
+    },
+    {
+      "id": "CVE-2023-46859",
+      "title": "Third-Party Driver Vulnerability",
+      "vendor": "Third-Party",
+      "date": "2023-10",
+      "url": "https://www.cve.org/CVERecord?id=CVE-2023-46859"
+    },
+    {
+      "id": "CVE-2023-46280",
+      "title": "Third-Party Driver Vulnerability",
+      "vendor": "Third-Party",
+      "date": "2023-10",
+      "url": "https://www.cve.org/CVERecord?id=CVE-2023-46280"
+    },
+    {
+      "id": "CVE-2023-42833",
+      "title": "Webkit Remote Code Execution Vulnerability",
+      "vendor": "Apple",
+      "date": "2023-09",
+      "url": "https://www.cve.org/CVERecord?id=CVE-2023-42833"
+    },
+    {
+      "id": "CVE-2023-35074",
+      "title": "Webkit Remote Code Execution Vulnerability",
+      "vendor": "Apple",
+      "date": "2023-09",
+      "url": "https://www.cve.org/CVERecord?id=CVE-2023-35074"
+    },
+    {
+      "id": "CVE-2023-31341",
+      "title": "Third-Party Driver Vulnerability",
+      "vendor": "Third-Party",
+      "date": "2023-05",
+      "url": "https://www.cve.org/CVERecord?id=CVE-2023-31341"
+    },
+    {
+      "id": "CVE-2022-2598",
+      "title": "Third-Party Driver Vulnerability",
+      "vendor": "Third-Party",
+      "date": "2022-07",
+      "url": "https://www.cve.org/CVERecord?id=CVE-2022-2598"
+    },
+    {
+      "id": "CVE-2022-2549",
+      "title": "Third-Party Driver Vulnerability",
+      "vendor": "Third-Party",
+      "date": "2022-07",
+      "url": "https://www.cve.org/CVERecord?id=CVE-2022-2549"
+    }
+  ]
+}

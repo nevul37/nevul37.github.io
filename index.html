@@ -5,14 +5,47 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Jongseong Kim</title>
     <meta name="description" content="Jongseong Kim (nevul37) is a first-year M.S. student in Computer Science at the University of Illinois Urbana-Champaign, supervised by Lingming Zhang, working on AI agents for bug finding in Windows systems.">
-    <meta name="theme-color" content="#ffffff">
-    <link rel="canonical" href="https://nevul37.github.io/">
+    <meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)">
+    <meta name="theme-color" content="#0f1012" media="(prefers-color-scheme: dark)">
+    <meta name="color-scheme" content="light dark">
+    <link rel="canonical" href="https://jongseong.kim/">
+    <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
 
     <meta property="og:type" content="profile">
     <meta property="og:title" content="Jongseong Kim">
     <meta property="og:description" content="M.S. student in Computer Science at UIUC. AI agents for bug finding in Windows systems.">
-    <meta property="og:url" content="https://nevul37.github.io/">
-    <meta name="twitter:card" content="summary">
+    <meta property="og:url" content="https://jongseong.kim/">
+    <meta property="og:image" content="https://jongseong.kim/assets/og-image.png">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@nevul37">
+
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Jongseong Kim",
+        "alternateName": "nevul37",
+        "url": "https://jongseong.kim/",
+        "email": "mailto:nevul37@gmail.com",
+        "jobTitle": "M.S. Student in Computer Science",
+        "affiliation": {
+            "@type": "CollegeOrUniversity",
+            "name": "University of Illinois Urbana-Champaign"
+        },
+        "alumniOf": {
+            "@type": "CollegeOrUniversity",
+            "name": "Ajou University"
+        },
+        "sameAs": [
+            "https://github.com/nevul37",
+            "https://x.com/nevul37",
+            "https://www.linkedin.com/in/jongseongkim"
+        ]
+    }
+    </script>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -34,6 +67,7 @@
         <div class="wrap nav__inner">
             <a class="nav__name" href="index.html">Jongseong Kim</a>
             <div class="nav__links">
+                <a class="is-secondary" href="#news">News</a>
                 <a href="#publications">Publications</a>
                 <a class="is-secondary" href="#experience">Experience</a>
                 <a class="is-secondary" href="#honors">Honors</a>
@@ -82,32 +116,171 @@
             -->
         </section>
 
+        <dl class="stats">
+            <div class="stat">
+                <dt>CVEs assigned</dt>
+                <dd><a href="pages/more-cves.html"><span data-cve-count="total">133</span></a></dd>
+            </div>
+            <div class="stat">
+                <dt>MSRC 2026 annual</dt>
+                <dd>#32</dd>
+            </div>
+            <div class="stat">
+                <dt>MSRC quarterly MVR</dt>
+                <dd>7&times;</dd>
+            </div>
+            <div class="stat">
+                <dt>DEF CON CTF Finals</dt>
+                <dd>3rd</dd>
+            </div>
+        </dl>
+
+        <section class="section" id="news">
+            <h2>News</h2>
+            <ul class="news" id="news-list">
+                <li>
+                    <time class="news__date" datetime="2026-10">Oct 2026</time>
+                    <span>
+                        <a href="https://arxiv.org/abs/2610.34435" target="_blank" rel="noreferrer">CyberDual</a>
+                        is out on arXiv: AI attackers versus AI code reviewers in real software maintenance.
+                    </span>
+                </li>
+                <li>
+                    <time class="news__date" datetime="2026-10">Oct 2026</time>
+                    <span>
+                        <a href="https://kex-bench.github.io/" target="_blank" rel="noreferrer">KEX-bench</a>
+                        appears at EMNLP 2026 as a main-conference <strong>oral</strong>.
+                    </span>
+                </li>
+                <li>
+                    <time class="news__date" datetime="2026-10">Oct 2026</time>
+                    <span>26 CVEs credited in Microsoft's October Patch Tuesday.</span>
+                </li>
+                <li>
+                    <time class="news__date" datetime="2026-08">Aug 2026</time>
+                    <span>Started the M.S. in Computer Science at UIUC.</span>
+                </li>
+                <li>
+                    <time class="news__date" datetime="2026-05">May 2026</time>
+                    <span>1st place at the DEF CON 34 CTF Qualifier, out of 673 teams.</span>
+                </li>
+                <li>
+                    <time class="news__date" datetime="2026-05">May 2026</time>
+                    <span>
+                        <a href="https://arxiv.org/abs/2605.05000" target="_blank" rel="noreferrer">Agentic Vulnerability Reasoning on COTS Binaries</a>
+                        is out on arXiv.
+                    </span>
+                </li>
+            </ul>
+            <button class="news__more" type="button" aria-expanded="false" aria-controls="news-list" hidden></button>
+        </section>
+
         <section class="section" id="publications">
             <h2>Publications</h2>
             <ol class="pubs">
                 <li>
+                    <div class="pub__title">CyberDual: AI Attackers versus AI Code Reviewers in Real Software Maintenance</div>
+                    <div class="pub__authors">
+                        Chenyuan Yang<sup>*</sup>,
+                        <a href="https://hwiwonl.ee/" target="_blank" rel="noreferrer">Hwiwon Lee</a><sup>*</sup>,
+                        <strong>Jongseong Kim</strong>, Yihan Yang,
+                        <a href="https://smlijun.github.io/" target="_blank" rel="noreferrer">Dongjun Kim</a>,
+                        Yinfang Chen, and
+                        <a href="https://lingming.cs.illinois.edu/" target="_blank" rel="noreferrer">Lingming Zhang</a>
+                    </div>
+                    <div class="pub__venue">arXiv preprint arXiv:2610.34435, 2026</div>
+                    <p class="pub__summary">
+                        An arena where attacker agents hide exploitable bugs in real open-source maintenance work and
+                        reviewer agents try to catch them, judged by rerunning each proof of concept.
+                    </p>
+                    <div class="pub__foot">
+                        <span class="pub__links">
+                            <a href="https://arxiv.org/abs/2610.34435" target="_blank" rel="noreferrer">arXiv</a>
+                            <a href="https://arxiv.org/pdf/2610.34435" target="_blank" rel="noreferrer">PDF</a>
+                            <button class="pub__bib-toggle" type="button" aria-expanded="false" aria-controls="bib-cyberdual">BibTeX</button>
+                        </span>
+                    </div>
+                    <div class="bib" id="bib-cyberdual" hidden>
+                        <pre>@article{yang2026cyberdual,
+  title   = {CyberDual: AI Attackers versus AI Code Reviewers in Real Software Maintenance},
+  author  = {Yang, Chenyuan and Lee, Hwiwon and Kim, Jongseong and Yang, Yihan and Kim, Dongjun and Chen, Yinfang and Zhang, Lingming},
+  journal = {arXiv preprint arXiv:2610.34435},
+  year    = {2026}
+}</pre>
+                        <button class="bib__copy" type="button">Copy</button>
+                    </div>
+                </li>
+                <li>
+                    <div class="pub__title">Evaluating Coding Agents on Kernel Exploit Generation</div>
+                    <div class="pub__authors">
+                        Junyoung Jang, Gwanhyun Lee,
+                        <a href="https://hwiwonl.ee/" target="_blank" rel="noreferrer">Hwiwon Lee</a>,
+                        Kyuheon Kim, <strong>Jongseong Kim</strong>, Jinho Jung, and
+                        <a href="https://lingming.cs.illinois.edu/" target="_blank" rel="noreferrer">Lingming Zhang</a>
+                    </div>
+                    <div class="pub__venue">Proceedings of EMNLP 2026 (Main Conference), Budapest</div>
+                    <p class="pub__summary">
+                        KEX-bench: 45 tasks from 40 Linux and Windows kernel CVEs that ask coding agents to build
+                        exploit primitives, from address leaks to arbitrary writes.
+                    </p>
+                    <div class="pub__foot">
+                        <span class="tag">Oral presentation</span>
+                        <span class="pub__links">
+                            <a href="https://aclanthology.org/2026.emnlp-main.1653/" target="_blank" rel="noreferrer">Paper</a>
+                            <a href="https://arxiv.org/abs/2609.25591" target="_blank" rel="noreferrer">arXiv</a>
+                            <a href="https://github.com/KEX-bench/KEX-bench" target="_blank" rel="noreferrer">Code</a>
+                            <a href="https://kex-bench.github.io/" target="_blank" rel="noreferrer">Project</a>
+                            <button class="pub__bib-toggle" type="button" aria-expanded="false" aria-controls="bib-kexbench">BibTeX</button>
+                        </span>
+                    </div>
+                    <div class="bib" id="bib-kexbench" hidden>
+                        <pre>@inproceedings{jang-etal-2026-evaluating,
+  title     = {Evaluating Coding Agents on Kernel Exploit Generation},
+  author    = {Jang, Junyoung and Lee, Gwanhyun and Lee, Hwiwon and Kim, Kyuheon and Kim, Jongseong and Jung, Jinho and Zhang, Lingming},
+  booktitle = {Proceedings of the 2026 Conference on Empirical Methods in Natural Language Processing},
+  pages     = {37581--37603},
+  year      = {2026},
+  address   = {Budapest, Hungary},
+  publisher = {Association for Computational Linguistics},
+  url       = {https://aclanthology.org/2026.emnlp-main.1653/}
+}</pre>
+                        <button class="bib__copy" type="button">Copy</button>
+                    </div>
+                </li>
+                <li>
                     <div class="pub__title">Agentic Vulnerability Reasoning on COTS Binaries</div>
                     <div class="pub__authors">
-                        <a href="https://hwiwonl.ee/" target="_blank" rel="noreferrer">Hwiwon Lee</a>,
-                        <strong>Jongseong Kim</strong>, and
+                        <a href="https://hwiwonl.ee/" target="_blank" rel="noreferrer">Hwiwon Lee</a><sup>*</sup>,
+                        <strong>Jongseong Kim</strong><sup>*</sup>, and
                         <a href="https://lingming.cs.illinois.edu/" target="_blank" rel="noreferrer">Lingming Zhang</a>
                     </div>
                     <div class="pub__venue">arXiv preprint arXiv:2605.05000, 2026</div>
+                    <p class="pub__summary">
+                        SLYP, an early prototype of SEC-agent, pairs tool servers for binary exploration and dynamic
+                        debugging with debugger-verified proof-of-concept synthesis. On a 20-object COM benchmark it
+                        recovers all 64 vulnerable entry functions, while default production coding agents miss up to 15
+                        and produce no verified PoCs.
+                    </p>
                     <div class="pub__foot">
                         <span class="tag">39 zero-days, 23 assigned CVEs, $200,000+ in Microsoft bounty awards</span>
                         <span class="pub__links">
                             <a href="https://arxiv.org/abs/2605.05000" target="_blank" rel="noreferrer">arXiv</a>
                             <a href="https://arxiv.org/pdf/2605.05000" target="_blank" rel="noreferrer">PDF</a>
+                            <button class="pub__bib-toggle" type="button" aria-expanded="false" aria-controls="bib-slyp">BibTeX</button>
                         </span>
+                    </div>
+                    <div class="bib" id="bib-slyp" hidden>
+                        <pre>@article{lee2026agentic,
+  title   = {Agentic Vulnerability Reasoning on COTS Binaries},
+  author  = {Lee, Hwiwon and Kim, Jongseong and Zhang, Lingming},
+  journal = {arXiv preprint arXiv:2605.05000},
+  year    = {2026}
+}</pre>
+                        <button class="bib__copy" type="button">Copy</button>
                     </div>
                 </li>
             </ol>
-            <p class="note">
-                SLYP, an early prototype of SEC-agent, pairs tool servers for binary exploration and dynamic
-                debugging with debugger-verified proof-of-concept synthesis. On a 20-object COM benchmark it
-                recovers all 64 vulnerable entry functions, while default production coding agents miss up to 15
-                and produce no verified PoCs.
-            </p>
+            <p class="note"><sup>*</sup> Equal contribution</p>
         </section>
 
         <section class="section" id="talks">
@@ -117,6 +290,12 @@
                     <div class="pub__title">COM-pletely Unplanned: A Windows Bug Hunter's Journey to LPE</div>
                     <div class="pub__authors"><strong>Jongseong Kim</strong> and Dongjun Kim</div>
                     <div class="pub__venue">Off-By-One 2025, Singapore</div>
+                    <div class="pub__foot">
+                        <span class="pub__links">
+                            <a href="https://offbyone.sg/conference/dongjun-kim-jongseong-kim" target="_blank" rel="noreferrer">Session</a>
+                            <a href="https://www.youtube.com/watch?v=ES8qeIhwfAk" target="_blank" rel="noreferrer">Video</a>
+                        </span>
+                    </div>
                 </li>
                 <li>
                     <div class="pub__title">1-Click-Fuzz: Systematically Fuzzing the Windows Kernel Driver with Symbolic Execution</div>
@@ -125,6 +304,7 @@
                     <div class="pub__foot">
                         <span class="pub__links">
                             <a href="https://archive.codeblue.jp/2024/en/program/time-table/day2-010/" target="_blank" rel="noreferrer">Session</a>
+                            <a href="https://archive.codeblue.jp/2024/files/cb24-U25_1-Click-Fuzz_Systematically_Fuzzing_the_Windows_Kernel_Driver_with_Symbolic_Execution_Updated_by_SangjunPark_YunjinPark_JongseongKim.pdf" target="_blank" rel="noreferrer">Slides</a>
                             <a href="https://github.com/0dayResearchLab/msfuzz" target="_blank" rel="noreferrer">Code</a>
                         </span>
                     </div>
@@ -135,13 +315,13 @@
         <section class="section" id="disclosures">
             <h2>Vulnerability disclosures</h2>
             <p>
-                My reports have received CVE assignments from Microsoft, Apple, and third-party driver vendors
-                between 2022 and 2026, mostly for elevation of privilege in Windows services and kernel
-                drivers. Microsoft has recognized these reports with seven quarterly
+                My reports have received <span data-cve-count="total">133</span> CVE assignments from Microsoft, Apple,
+                and third-party driver vendors between 2022 and 2026, spanning Windows services and kernel drivers,
+                Office, SharePoint, and Exchange. Microsoft has recognized these reports with seven quarterly
                 <a href="https://msrc.microsoft.com/leaderboard" target="_blank" rel="noreferrer">Most Valuable Researcher</a>
-                listings, including the 2026 annual leaderboard.
+                listings and a #32 ranking on the 2026 annual leaderboard.
             </p>
-            <a class="more-link" href="pages/more-cves.html">Browse all CVEs <span aria-hidden="true">&rarr;</span></a>
+            <a class="more-link" href="pages/more-cves.html"><span>Browse all <span data-cve-count="total">133</span> CVEs</span> <span class="more-link__arrow" aria-hidden="true">&rarr;</span></a>
         </section>
 
         <section class="section" id="experience">
@@ -152,7 +332,7 @@
                         <div class="cv__org">University of Illinois Urbana-Champaign</div>
                         <div class="cv__role">M.S. Student, Computer Science</div>
                     </div>
-                    <div class="cv__date">2025 - Present</div>
+                    <div class="cv__date">2026 - Present</div>
                 </div>
                 <div class="cv__row">
                     <div>
@@ -160,7 +340,7 @@
                         <div class="cv__role">Offensive Security Researcher</div>
                         <div class="cv__detail">Windows kernel drivers, COM components, and system internals.</div>
                     </div>
-                    <div class="cv__date">Sep 2024 - Present</div>
+                    <div class="cv__date">Sep 2024 - Jun 2026</div>
                 </div>
                 <div class="cv__row">
                     <div>
@@ -200,7 +380,7 @@
                         <div class="cv__org">University of Illinois Urbana-Champaign</div>
                         <div class="cv__role">M.S. in Computer Science</div>
                     </div>
-                    <div class="cv__date">2025 - Present</div>
+                    <div class="cv__date">2026 - Present</div>
                 </div>
                 <div class="cv__row">
                     <div>
@@ -230,7 +410,7 @@
                         <div class="cv__org">
                             <a href="https://msrc.microsoft.com/leaderboard" target="_blank" rel="noreferrer">Microsoft Most Valuable Researcher</a>
                         </div>
-                        <div class="cv__role">Seven quarterly listings, including the 2026 annual leaderboard</div>
+                        <div class="cv__role">Seven quarterly listings; #32 on the 2026 annual leaderboard</div>
                     </div>
                     <div class="cv__date">2023 - 2026</div>
                 </div>
@@ -258,8 +438,46 @@
     <footer class="footer">
         <div class="wrap footer__inner">
             <span>&copy; 2026 Jongseong Kim</span>
-            <span>Urbana, Illinois</span>
+            <span>Urbana, Illinois &middot; Updated Nov 2026</span>
         </div>
     </footer>
+
+    <script>
+        (function () {
+            const SHOWN = 4;
+            const list = document.getElementById('news-list');
+            const more = document.querySelector('.news__more');
+            const extra = list.children.length - SHOWN;
+            if (extra <= 0) { return; }
+
+            function render(open) {
+                list.classList.toggle('is-collapsed', !open);
+                more.setAttribute('aria-expanded', String(open));
+                more.textContent = open ? 'Show less' : 'Show ' + extra + ' more';
+            }
+
+            more.hidden = false;
+            render(false);
+            more.addEventListener('click', function () {
+                render(more.getAttribute('aria-expanded') !== 'true');
+            });
+        })();
+
+        document.querySelectorAll('.pub__bib-toggle').forEach(function (toggle) {
+            const panel = document.getElementById(toggle.getAttribute('aria-controls'));
+            toggle.addEventListener('click', function () {
+                const open = toggle.getAttribute('aria-expanded') !== 'true';
+                toggle.setAttribute('aria-expanded', String(open));
+                panel.hidden = !open;
+            });
+            panel.querySelector('.bib__copy').addEventListener('click', function (event) {
+                const button = event.currentTarget;
+                navigator.clipboard.writeText(panel.querySelector('pre').textContent).then(function () {
+                    button.textContent = 'Copied';
+                    setTimeout(function () { button.textContent = 'Copy'; }, 1500);
+                });
+            });
+        });
+    </script>
 </body>
 </html>
