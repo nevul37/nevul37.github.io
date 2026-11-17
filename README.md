@@ -12,7 +12,7 @@ The CVE archive (`pages/more-cves.html`) and the CVE counts on the home page are
 from `data/cves.json`.
 
 ```
-python scripts/cves.py sync               # pull new Microsoft credits for the last three months
+python scripts/cves.py sync               # pull new Microsoft credits for the last twelve months
 python scripts/cves.py sync 2026-Nov      # or for specific Patch Tuesday months
 python scripts/cves.py build              # regenerate after editing data/cves.json by hand
 ```

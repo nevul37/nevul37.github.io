@@ -338,6 +338,13 @@
       "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-69915"
     },
     {
+      "id": "CVE-2026-81957",
+      "title": "Microsoft Excel Remote Code Execution Vulnerability",
+      "vendor": "Microsoft",
+      "date": "2026-09",
+      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-81957"
+    },
+    {
       "id": "CVE-2026-77504",
       "title": "Microsoft Office Word Remote Code Execution Vulnerability",
       "vendor": "Microsoft",
@@ -352,6 +359,13 @@
       "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-69904"
     },
     {
+      "id": "CVE-2026-69767",
+      "title": "Microsoft Office PowerPoint Remote Code Execution Vulnerability",
+      "vendor": "Microsoft",
+      "date": "2026-09",
+      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-69767"
+    },
+    {
       "id": "CVE-2026-69690",
       "title": "Microsoft Office SharePoint Spoofing Vulnerability",
       "vendor": "Microsoft",
@@ -359,11 +373,25 @@
       "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-69690"
     },
     {
+      "id": "CVE-2026-69619",
+      "title": "Windows exFAT File System Elevation of Privilege Vulnerability",
+      "vendor": "Microsoft",
+      "date": "2026-09",
+      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-69619"
+    },
+    {
       "id": "CVE-2026-69605",
       "title": "Microsoft Install Service Elevation of Privilege Vulnerability",
       "vendor": "Microsoft",
       "date": "2026-09",
       "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-69605"
+    },
+    {
+      "id": "CVE-2026-69544",
+      "title": "Windows SMB Client Elevation of Privilege Vulnerability",
+      "vendor": "Microsoft",
+      "date": "2026-09",
+      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-69544"
     },
     {
       "id": "CVE-2026-69417",
@@ -387,6 +415,13 @@
       "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-69380"
     },
     {
+      "id": "CVE-2026-69371",
+      "title": "Windows Overlay Filter Elevation of Privilege Vulnerability",
+      "vendor": "Microsoft",
+      "date": "2026-09",
+      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-69371"
+    },
+    {
       "id": "CVE-2026-69360",
       "title": "Microsoft Office Word Remote Code Execution Vulnerability",
       "vendor": "Microsoft",
@@ -394,11 +429,25 @@
       "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-69360"
     },
     {
+      "id": "CVE-2026-69316",
+      "title": "Windows Overlay Filter Information Disclosure Vulnerability",
+      "vendor": "Microsoft",
+      "date": "2026-09",
+      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-69316"
+    },
+    {
       "id": "CVE-2026-69282",
       "title": "Microsoft Office SharePoint Remote Code Execution Vulnerability",
       "vendor": "Microsoft",
       "date": "2026-09",
       "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-69282"
+    },
+    {
+      "id": "CVE-2026-56172",
+      "title": "Windows VHD miniport driver Elevation of Privilege Vulnerability",
+      "vendor": "Microsoft",
+      "date": "2026-09",
+      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-56172"
     },
     {
       "id": "CVE-2026-70306",
@@ -436,6 +485,20 @@
       "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-68795"
     },
     {
+      "id": "CVE-2026-68794",
+      "title": "Microsoft Excel Remote Code Execution Vulnerability",
+      "vendor": "Microsoft",
+      "date": "2026-08",
+      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-68794"
+    },
+    {
+      "id": "CVE-2026-66810",
+      "title": "Microsoft Office Word Information Disclosure Vulnerability",
+      "vendor": "Microsoft",
+      "date": "2026-08",
+      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-66810"
+    },
+    {
       "id": "CVE-2026-64916",
       "title": "Microsoft SharePoint Server Spoofing Vulnerability",
       "vendor": "Microsoft",
@@ -462,6 +525,13 @@
       "vendor": "Microsoft",
       "date": "2026-08",
       "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-63513"
+    },
+    {
+      "id": "CVE-2026-62799",
+      "title": "Windows SMB Client Elevation of Privilege Vulnerability",
+      "vendor": "Microsoft",
+      "date": "2026-08",
+      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-62799"
     },
     {
       "id": "CVE-2026-62741",

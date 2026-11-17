@@ -4,9 +4,10 @@
     python scripts/cves.py build               regenerate pages from data/cves.json
     python scripts/cves.py sync [2026-Nov ...]  pull new Microsoft credits from MSRC, then build
 
-`sync` reads Microsoft's monthly CVRF documents (the last three months by default),
-adds every CVE whose acknowledgments credit nevul37, and rebuilds. Remove an entry by
-adding its ID to "exclude" in data/cves.json so the next sync does not bring it back.
+`sync` reads Microsoft's monthly CVRF documents (the last twelve months by default, since
+MSRC often adds credits to a release weeks after it ships), adds every CVE whose
+acknowledgments credit nevul37, and rebuilds. Remove an entry by adding its ID to
+"exclude" in data/cves.json so the next sync does not bring it back.
 """
 
 import datetime
@@ -101,7 +102,7 @@ def fetch_cvrf(month):
         return json.load(resp)
 
 
-def recent_months(n=3):
+def recent_months(n=12):
     today = datetime.date.today()
     out = []
     for back in range(n - 1, -1, -1):
