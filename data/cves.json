@@ -303,6 +303,13 @@
       "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-83696"
     },
     {
+      "id": "CVE-2026-70571",
+      "title": "Microsoft Exchange Server Remote Code Execution Vulnerability",
+      "vendor": "Microsoft",
+      "date": "2026-10",
+      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-70571"
+    },
+    {
       "id": "CVE-2026-70291",
       "title": "Microsoft Office Outlook Remote Code Execution Vulnerability",
       "vendor": "Microsoft",
@@ -343,6 +350,13 @@
       "vendor": "Microsoft",
       "date": "2026-09",
       "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-81957"
+    },
+    {
+      "id": "CVE-2026-81355",
+      "title": "Virtual Hard Disk (VHD) Miniport Driver Remote Code Execution Vulnerability",
+      "vendor": "Microsoft",
+      "date": "2026-09",
+      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-81355"
     },
     {
       "id": "CVE-2026-77504",
@@ -499,6 +513,13 @@
       "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-66810"
     },
     {
+      "id": "CVE-2026-65779",
+      "title": "Windows Autopilot Elevation of Privilege Vulnerability",
+      "vendor": "Microsoft",
+      "date": "2026-08",
+      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-65779"
+    },
+    {
       "id": "CVE-2026-64916",
       "title": "Microsoft SharePoint Server Spoofing Vulnerability",
       "vendor": "Microsoft",
@@ -625,6 +646,13 @@
       "url": "https://support.apple.com/en-us/128066"
     },
     {
+      "id": "CVE-2026-45504",
+      "title": "Microsoft Exchange Server Elevation of Privilege Vulnerability",
+      "vendor": "Microsoft",
+      "date": "2026-06",
+      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-45504"
+    },
+    {
       "id": "CVE-2026-45502",
       "title": "Microsoft Exchange Server Information Disclosure Vulnerability",
       "vendor": "Microsoft",
@@ -637,6 +665,13 @@
       "vendor": "Microsoft",
       "date": "2026-06",
       "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-45501"
+    },
+    {
+      "id": "CVE-2026-45500",
+      "title": "Microsoft Exchange Server Spoofing Vulnerability",
+      "vendor": "Microsoft",
+      "date": "2026-06",
+      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-45500"
     },
     {
       "id": "CVE-2026-42984",
